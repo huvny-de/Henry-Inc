@@ -1,4 +1,3 @@
-C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.csproj.AssemblyReference.cache
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.AssemblyInfoInputs.cache
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.AssemblyInfo.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.csproj.CoreCompileInputs.cache
@@ -10,3 +9,4 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\bin\Debug\netcoreapp
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.genruntimeconfig.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.csproj.AssemblyReference.cache

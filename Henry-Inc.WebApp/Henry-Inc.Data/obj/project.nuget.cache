@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ubNbGRcgN8+ceSQdkjL/Nqd4xhOnz7eeem+umiNw6G3+/BTvVIz9hnwOgtFTMyyWeR9weUVCyZN8I4Wknf2/zQ==",
+  "dgSpecHash": "YsXuDOMJdHllocgLDGxrPXyNx7yjHIsAH6XxIGVYlXFZeQVpP7HHcg05fCebtTtC+pP15LMVXahsraa9QN1s8Q==",
   "success": true,
   "projectFilePath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
   "expectedPackageFiles": [
@@ -23,8 +23,13 @@
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.1\\microsoft.extensions.configuration.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.1\\microsoft.extensions.configuration.abstractions.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.1\\microsoft.extensions.configuration.binder.3.1.1.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.1\\microsoft.extensions.configuration.fileextensions.3.1.1.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.1\\microsoft.extensions.configuration.json.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.1\\microsoft.extensions.dependencyinjection.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.1\\microsoft.extensions.dependencyinjection.abstractions.3.1.1.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.1\\microsoft.extensions.fileproviders.abstractions.3.1.1.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.1\\microsoft.extensions.fileproviders.physical.3.1.1.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.1\\microsoft.extensions.filesystemglobbing.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.identity.core\\3.1.1\\microsoft.extensions.identity.core.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.identity.stores\\3.1.1\\microsoft.extensions.identity.stores.3.1.1.nupkg.sha512",
     "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.logging\\3.1.1\\microsoft.extensions.logging.3.1.1.nupkg.sha512",
