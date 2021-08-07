@@ -1,6 +1,8 @@
 ﻿using Henry_Inc.Data.Configurations;
 using Henry_Inc.Data.Entities;
 using Henry_Inc.Data.Extensions;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,7 +10,7 @@ using System.Text;
 
 namespace Henry_Inc.Data.Contexts
 {
-    public class MyAppContext : DbContext
+    public class MyAppContext : IdentityDbContext<AppUser,AppRole,Guid>   
     {
         public MyAppContext(DbContextOptions options) : base(options)
         {
@@ -34,6 +36,14 @@ namespace Henry_Inc.Data.Contexts
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
             modelBuilder.ApplyConfiguration(new ProductImageConfiguration());
             modelBuilder.ApplyConfiguration(new SlideConfiguration());
+
+            // identity
+            modelBuilder.Entity<IdentityUserClaim<Guid>>().ToTable("AppUserClaims");
+            modelBuilder.Entity<IdentityUserRole<Guid>>().ToTable("AppUserRoles").HasKey(x => new { x.UserId, x.RoleId });
+            modelBuilder.Entity<IdentityUserLogin<Guid>>().ToTable("AppUserLogins").HasKey(x => x.UserId);
+
+            modelBuilder.Entity<IdentityRoleClaim<Guid>>().ToTable("AppRoleClaims");
+            modelBuilder.Entity<IdentityUserToken<Guid>>().ToTable("AppUserTokens").HasKey(x => x.UserId);
 
 
             modelBuilder.Seed();
