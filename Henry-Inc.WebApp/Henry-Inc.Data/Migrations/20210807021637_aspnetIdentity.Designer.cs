@@ -4,14 +4,16 @@ using Henry_Inc.Data.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Henry_Inc.Data.Migrations
 {
     [DbContext(typeof(MyAppContext))]
-    partial class MyAppContextModelSnapshot : ModelSnapshot
+    [Migration("20210807021637_aspnetIdentity")]
+    partial class aspnetIdentity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -73,16 +75,6 @@ namespace Henry_Inc.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "198097c0-6240-4a97-b4c8-7f1f9c3a4422",
-                            Description = "Administrator role",
-                            Name = "admin",
-                            NormalizedName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("Henry_Inc.Data.Entities.AppUser", b =>
@@ -149,27 +141,6 @@ namespace Henry_Inc.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("AppUsers");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
-                            AccessFailedCount = 0,
-                            ConcurrencyStamp = "39120f6d-d468-45db-8f4c-590f8d16e641",
-                            Dob = new DateTime(2000, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "henry@gmail.com",
-                            EmailConfirmed = true,
-                            FirstName = "Henry",
-                            LastName = "de Aaron",
-                            LockoutEnabled = false,
-                            NormalizedEmail = "henry@gmail.com",
-                            NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFiYSxCX9FPUyHwXkLr3R+JyRkhBEO2QTfdAP1wlBYEUe6xsc4oFKUY6wZ/cHKk1ig==",
-                            PhoneNumberConfirmed = false,
-                            SecurityStamp = "",
-                            TwoFactorEnabled = false,
-                            UserName = "admin"
-                        });
                 });
 
             modelBuilder.Entity("Henry_Inc.Data.Entities.Cart", b =>
@@ -513,7 +484,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 8, 7, 9, 28, 19, 712, DateTimeKind.Local).AddTicks(7848),
+                            DateCreated = new DateTime(2021, 8, 7, 9, 16, 35, 906, DateTimeKind.Local).AddTicks(4643),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -857,13 +828,6 @@ namespace Henry_Inc.Data.Migrations
                     b.HasKey("UserId", "RoleId");
 
                     b.ToTable("AppUserRoles");
-
-                    b.HasData(
-                        new
-                        {
-                            UserId = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
-                            RoleId = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc")
-                        });
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<System.Guid>", b =>
