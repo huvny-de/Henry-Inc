@@ -1,5 +1,6 @@
 ﻿using Henry_Inc.Data.Configurations;
 using Henry_Inc.Data.Entities;
+using Henry_Inc.Data.Extensions;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -35,7 +36,7 @@ namespace Henry_Inc.Data.Contexts
             modelBuilder.ApplyConfiguration(new SlideConfiguration());
 
 
-
+            modelBuilder.Seed();
             //base.OnModelCreating(modelBuilder);
         }
         public DbSet<Product> Products { get; set; }
