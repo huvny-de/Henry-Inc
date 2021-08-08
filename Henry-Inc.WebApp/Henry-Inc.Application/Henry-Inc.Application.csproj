@@ -1,8 +1,13 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Henry_Inc.Application</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Henry-Inc.Data\Henry-Inc.Data.csproj" />
+    <ProjectReference Include="..\Henry-Inc.Utilities\Henry-Inc.Utilities.csproj" />
+  </ItemGroup>
 
 </Project>
