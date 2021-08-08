@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "w0FP/ZDLU1oBcRz7+zEAc9r6mkl2d28/iYOAAc4AWm9k39nipG3U5fyywKOQEkurBlScmghsJUxUkcpFIQs9eA==",
+  "success": true,
+  "projectFilePath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.10\\microsoft.aspnetcore.http.features.3.1.10.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.10\\microsoft.extensions.primitives.3.1.10.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\system.io.pipelines\\4.7.3\\system.io.pipelines.4.7.3.nupkg.sha512"
+  ],
+  "logs": []
+}

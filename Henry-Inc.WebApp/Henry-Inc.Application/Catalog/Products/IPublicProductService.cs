@@ -1,6 +1,6 @@
-﻿using Henry_Inc.Application.Catalog.Products.Dtos;
-using Henry_Inc.Application.Catalog.Products.Dtos.Publics;
-using Henry_Inc.Application.Dtos;
+﻿using Henry_Inc.ViewModels.Catalogs.Products;
+using Henry_Inc.ViewModels.Catalogs.Products.Public;
+using Henry_Inc.ViewModels.Commons;
 using System;
 using System.Collections.Generic;
 using System.Text;

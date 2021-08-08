@@ -1,6 +1,4 @@
-﻿using Henry_Inc.Application.Catalog.Products.Dtos;
-using Henry_Inc.Application.Catalog.Products.Dtos.Publics;
-using Henry_Inc.Application.Dtos;
+﻿
 using Henry_Inc.Data.Contexts;
 using System;
 using System.Collections.Generic;
@@ -8,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Henry_Inc.ViewModels.Catalogs.Products;
+using Henry_Inc.ViewModels.Commons;
+using Henry_Inc.ViewModels.Catalogs.Products.Public;
 
 namespace Henry_Inc.Application.Catalog.Products
 {
@@ -17,7 +18,6 @@ namespace Henry_Inc.Application.Catalog.Products
         public PublicProductService(MyAppContext context)
         {
             _context = context;
-
         }
         public async Task<PagedResult<ProductViewModel>> GetAllByCategoryId(GetProductPagingRequest request)
         {

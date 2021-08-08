@@ -1,6 +1,10 @@
-﻿using Henry_Inc.Application.Catalog.Products.Dtos;
-using Henry_Inc.Application.Catalog.Products.Dtos.Manages;
-using Henry_Inc.Application.Dtos;
+﻿
+using Henry_Inc.ViewModels.Catalogs.ProductImages;
+using Henry_Inc.ViewModels.Catalogs.Products;
+using Henry_Inc.ViewModels.Catalogs.Products.Manage;
+using Henry_Inc.ViewModels.Commons;
+using Microsoft.AspNetCore.Http;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Henry_Inc.Application.Catalog.Products
@@ -14,6 +18,11 @@ namespace Henry_Inc.Application.Catalog.Products
         Task AddViewCount(int productId);
         Task<int> Delete(int productId);
         Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
+        Task<int> AddImage(int productId, List<IFormFile> files);
+        Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request);
+        Task<int> RemoveImage(int productId);
+
+        Task<List<ProductImageViewModel>> GetListImages(int productId);
 
     }
 }
