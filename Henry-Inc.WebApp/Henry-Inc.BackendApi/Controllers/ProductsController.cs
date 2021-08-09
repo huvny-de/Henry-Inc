@@ -9,38 +9,39 @@ using System.Threading.Tasks;
 
 namespace Henry_Inc.BackendApi.Controllers
 {
+    //api/products
     [Route("api/[controller]")]
     [ApiController]
-    public class ProductController : ControllerBase
+    public class ProductsController : ControllerBase
     {
         private readonly IPublicProductService _pubicProductService;
         private readonly IManageProductService _manageProductService;
 
-        public ProductController(IPublicProductService pubicProductService, IManageProductService manageProductService)
+        public ProductsController(IPublicProductService pubicProductService, IManageProductService manageProductService)
         {
             _pubicProductService = pubicProductService;
             _manageProductService = manageProductService;
         }
         // http://localhost:port/product
-        [HttpGet("{languageId}")]
-        public async Task<IActionResult> Get(string languageId)
-        {
-            var products = await _pubicProductService.GetAll(languageId);
-            return Ok(products);
-        }
-        // http://localhost:port/product/public-paging
+        //[HttpGet("{languageId}")]
+        //public async Task<IActionResult> GetAll(string languageId)
+        //{
+        //    var products = await _pubicProductService.GetAll(languageId);
+        //    return Ok(products);
+        //}
+        // http://localhost:port/products?pageIndex=1&pageSize=10&CategoryId=?
 
-        [HttpGet("public-paging/{languageId}")]
-        public async Task<IActionResult> Get([FromQuery] GetPublicProductPagingRequest request)
+        [HttpGet("{languageId}")]
+        public async Task<IActionResult> GetAllPaging(string languageId, [FromQuery] GetPublicProductPagingRequest request)
         {
-            var products = await _pubicProductService.GetAllByCategoryId(request);
+            var products = await _pubicProductService.GetAllByCategoryId(languageId, request);
             return Ok(products);
         }
         // http://localhost:port/product/id
-        [HttpGet("{id}/{languageId}")]
-        public async Task<IActionResult> GetById(int id, string languageId)
+        [HttpGet("{productId}/{languageId}")]
+        public async Task<IActionResult> GetById(int productId, string languageId)
         {
-            var products = await _manageProductService.GetById(id, languageId);
+            var products = await _manageProductService.GetById(productId, languageId);
             if (products == null)
             {
                 return BadRequest("Cannot find product");
@@ -51,6 +52,10 @@ namespace Henry_Inc.BackendApi.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var productId = await _manageProductService.Create(request);
             if (productId == 0)
             {
@@ -59,9 +64,13 @@ namespace Henry_Inc.BackendApi.Controllers
             var product = await _manageProductService.GetById(productId, request.LanguageId);
             return CreatedAtAction(nameof(GetById), new { id = product }, product);
         }
-        [HttpPut]
+        [HttpPut] // update all
         public async Task<IActionResult> Update([FromForm] ProductUpdateRequest request)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
             var affectedResult = await _manageProductService.Update(request);
             if (affectedResult == 0)
             {
@@ -69,10 +78,10 @@ namespace Henry_Inc.BackendApi.Controllers
             }
             return Ok();
         }
-        [HttpPut("price/{id}/{newPrice}")]
-        public async Task<IActionResult> UpdatePrice( int id, decimal newPrice)
+        [HttpPatch("{productId}/{newPrice}")]
+        public async Task<IActionResult> UpdatePrice(int productId, decimal newPrice)
         {
-            var isSuccessful = await _manageProductService.UpdatePrice(id, newPrice);
+            var isSuccessful = await _manageProductService.UpdatePrice(productId, newPrice);
             if (isSuccessful)
             {
                 return Ok();
