@@ -69,3 +69,8 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\obj\Debug\netc
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\obj\Debug\netcoreapp3.1\Henry-Inc.BackendApi.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\obj\Debug\netcoreapp3.1\Henry-Inc.BackendApi.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\obj\Debug\netcoreapp3.1\Henry-Inc.BackendApi.genruntimeconfig.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\obj\Debug\netcoreapp3.1\Henry-Inc.BackendApi.MvcApplicationPartsAssemblyInfo.cs
