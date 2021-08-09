@@ -78,7 +78,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "198097c0-6240-4a97-b4c8-7f1f9c3a4422",
+                            ConcurrencyStamp = "0139c4a0-c4d3-4102-9a84-9cd2b7a5884e",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -155,7 +155,7 @@ namespace Henry_Inc.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "39120f6d-d468-45db-8f4c-590f8d16e641",
+                            ConcurrencyStamp = "7c15728e-1e60-4203-a4bc-04742fb3c97a",
                             Dob = new DateTime(2000, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "henry@gmail.com",
                             EmailConfirmed = true,
@@ -164,7 +164,7 @@ namespace Henry_Inc.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "henry@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEFiYSxCX9FPUyHwXkLr3R+JyRkhBEO2QTfdAP1wlBYEUe6xsc4oFKUY6wZ/cHKk1ig==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEC/90TCCS+mTrPGuU72v8PZgKvYZoEAh6CJxA3JpW1b/6xf01oZDXjYhyl/QJUpZwA==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -513,7 +513,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 8, 7, 9, 28, 19, 712, DateTimeKind.Local).AddTicks(7848),
+                            DateCreated = new DateTime(2021, 8, 8, 7, 17, 46, 926, DateTimeKind.Local).AddTicks(9724),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -941,7 +941,7 @@ namespace Henry_Inc.Data.Migrations
             modelBuilder.Entity("Henry_Inc.Data.Entities.ProductImage", b =>
                 {
                     b.HasOne("Henry_Inc.Data.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductImages")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -971,7 +971,7 @@ namespace Henry_Inc.Data.Migrations
                         .IsRequired();
 
                     b.HasOne("Henry_Inc.Data.Entities.Product", "Product")
-                        .WithMany()
+                        .WithMany("ProductTranslations")
                         .HasForeignKey("ProductId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
