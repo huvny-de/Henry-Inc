@@ -5,7 +5,6 @@ using Henry_Inc.Data.Entities;
 using Henry_Inc.Utilities.Exceptions;
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
-using Henry_Inc.ViewModels.Catalogs.Products.Manage;
 using Henry_Inc.ViewModels.Commons;
 using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
@@ -100,7 +99,7 @@ namespace Henry_Inc.Application.Catalog.Products
             throw new NotImplementedException();
         }
 
-        public async Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request)
+        public async Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request)
         {
             //1. Select Join
             var query = from p in _context.Products

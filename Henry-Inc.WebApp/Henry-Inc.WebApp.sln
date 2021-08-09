@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Henry-Inc.Application", "He
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Henry-Inc.Utilities", "Henry-Inc.Utilities\Henry-Inc.Utilities.csproj", "{DE2C6743-9E0E-48A6-B224-1EEFA020ACEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Henry-Inc.ViewModels", "Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj", "{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Henry-Inc.ViewModels", "Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj", "{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Henry-Inc.BackendApi", "Henry-Inc.BackendApi\Henry-Inc.BackendApi.csproj", "{899E73E4-19F0-4B3F-A780-7D89109858EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{899E73E4-19F0-4B3F-A780-7D89109858EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{899E73E4-19F0-4B3F-A780-7D89109858EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{899E73E4-19F0-4B3F-A780-7D89109858EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{899E73E4-19F0-4B3F-A780-7D89109858EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

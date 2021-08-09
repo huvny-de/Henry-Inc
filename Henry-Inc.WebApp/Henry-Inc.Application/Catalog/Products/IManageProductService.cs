@@ -1,7 +1,6 @@
 ﻿
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
-using Henry_Inc.ViewModels.Catalogs.Products.Manage;
 using Henry_Inc.ViewModels.Commons;
 using Microsoft.AspNetCore.Http;
 using System.Collections.Generic;
@@ -17,7 +16,7 @@ namespace Henry_Inc.Application.Catalog.Products
         Task<bool> UpdateStock(int productId, int addedQuantity);
         Task AddViewCount(int productId);
         Task<int> Delete(int productId);
-        Task<PagedResult<ProductViewModel>> GetAllPaging(GetProductPagingRequest request);
+        Task<PagedResult<ProductViewModel>> GetAllPaging(GetManageProductPagingRequest request);
         Task<int> AddImage(int productId, List<IFormFile> files);
         Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request);
         Task<int> RemoveImage(int productId);
