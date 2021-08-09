@@ -7,6 +7,7 @@ namespace Henry_Inc.ViewModels.Catalogs.Products
 {
     public class GetPublicProductPagingRequest : PagingResquestBase
     {
+        public string languageId { get; set; }
         public int? CategoryId { get; set; }
 
     }

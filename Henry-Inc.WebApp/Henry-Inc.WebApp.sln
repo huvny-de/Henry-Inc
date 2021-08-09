@@ -13,7 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Henry-Inc.Utilities", "Henr
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Henry-Inc.ViewModels", "Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj", "{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Henry-Inc.BackendApi", "Henry-Inc.BackendApi\Henry-Inc.BackendApi.csproj", "{899E73E4-19F0-4B3F-A780-7D89109858EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Henry-Inc.BackendApi", "Henry-Inc.BackendApi\Henry-Inc.BackendApi.csproj", "{899E73E4-19F0-4B3F-A780-7D89109858EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Infrashstructure", "1. Infrashstructure", "{7E4BB457-6D98-4409-9F71-605BF718497C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Domain", "2. Domain", "{A9D819EC-7F9A-4016-827C-EB17D8C998A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Host", "3. Host", "{541A9DCC-CA4D-4ABB-B592-8B880C87A20F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -48,6 +54,14 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{33DDADDD-0332-4254-9033-1A8017E10EE0} = {541A9DCC-CA4D-4ABB-B592-8B880C87A20F}
+		{6B2D9977-B784-4AB1-A813-5133E9C9822F} = {A9D819EC-7F9A-4016-827C-EB17D8C998A1}
+		{9034D293-AF60-49D2-81E1-46A343BD6351} = {A9D819EC-7F9A-4016-827C-EB17D8C998A1}
+		{DE2C6743-9E0E-48A6-B224-1EEFA020ACEA} = {7E4BB457-6D98-4409-9F71-605BF718497C}
+		{5C9789FA-0F41-47E2-BFBF-B5FA222CDAFD} = {7E4BB457-6D98-4409-9F71-605BF718497C}
+		{899E73E4-19F0-4B3F-A780-7D89109858EB} = {541A9DCC-CA4D-4ABB-B592-8B880C87A20F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AA6073A3-81D4-4970-B981-187E7A731C0F}
