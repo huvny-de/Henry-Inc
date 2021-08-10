@@ -10,6 +10,7 @@ namespace Henry_Inc.ViewModels.Catalogs.ProductImages
         public string Caption { get; set; }
 
         public bool IsDefault { get; set; }
+        public DateTime DateCreated { get; set; }
 
         public int SortOrder { get; set; }
 

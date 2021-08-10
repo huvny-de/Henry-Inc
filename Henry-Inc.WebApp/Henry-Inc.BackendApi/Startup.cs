@@ -1,4 +1,5 @@
 using Henry_Inc.Application.Catalog.Products;
+using Henry_Inc.Application.Commons;
 using Henry_Inc.BackendApi.Constants;
 using Henry_Inc.Data.Contexts;
 using Microsoft.AspNetCore.Builder;
@@ -34,6 +35,10 @@ namespace Henry_Inc.BackendApi
          options.UseSqlServer(Configuration.GetConnectionString(SystemConstant.MainConnectionString)));
 
             services.AddTransient<IPublicProductService, PublicProductService>();
+            services.AddTransient<IManageProductService, ManageProductService>();
+            services.AddTransient<IStorageService, FileStorageService>();
+
+
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
