@@ -74,3 +74,7 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netc
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\obj\Debug\netcoreapp3.1\Henry-Inc.BackendApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
