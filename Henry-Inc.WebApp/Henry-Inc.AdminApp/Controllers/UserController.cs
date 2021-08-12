@@ -1,4 +1,5 @@
-﻿using Henry_Inc.ViewModels.System.Users;
+﻿using Henry_Inc.AdminApp.Services;
+using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,13 @@ namespace Henry_Inc.AdminApp.Controllers
 {
     public class UserController : Controller
     {
+        private readonly IUserApiClient _userApiClient;
+
+        public UserController(IUserApiClient userApiClient)
+        {
+            _userApiClient = userApiClient;
+        }
+
         public IActionResult Index()
         {
             return View();
@@ -19,8 +27,11 @@ namespace Henry_Inc.AdminApp.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Login(LoginRequest request)
+        public async Task<IActionResult> Login(LoginRequest request)
         {
+            if (!ModelState.IsValid)
+                return View(ModelState);
+            var token = await _userApiClient.Authenticate(request);
             return View();
         }
     }
