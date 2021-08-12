@@ -1,10 +1,13 @@
 using Henry_Inc.Application.Catalog.Products;
 using Henry_Inc.Application.Commons;
+using Henry_Inc.Application.System.Users;
 using Henry_Inc.BackendApi.Constants;
 using Henry_Inc.Data.Contexts;
+using Henry_Inc.Data.Entities;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -32,13 +35,20 @@ namespace Henry_Inc.BackendApi
 
             services.AddControllersWithViews();
             services.AddDbContext<MyAppContext>(options =>
-         options.UseSqlServer(Configuration.GetConnectionString(SystemConstant.MainConnectionString)));
-
+                 options.UseSqlServer(Configuration.GetConnectionString(SystemConstant.MainConnectionString)));
+            services.AddIdentity<AppUser, AppRole>()
+                .AddEntityFrameworkStores<MyAppContext>()
+                .AddDefaultTokenProviders();
+            // DI 
             services.AddTransient<IPublicProductService, PublicProductService>();
             services.AddTransient<IManageProductService, ManageProductService>();
             services.AddTransient<IStorageService, FileStorageService>();
-
-
+            // Identity DI
+            services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
+            services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
+            services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
+            services.AddTransient<IUserService, UserService>();
+            // Swagger Extension
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo

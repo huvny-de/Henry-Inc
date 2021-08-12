@@ -78,7 +78,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "0139c4a0-c4d3-4102-9a84-9cd2b7a5884e",
+                            ConcurrencyStamp = "18709fd4-b895-46b4-89f5-947b97de2375",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -155,7 +155,7 @@ namespace Henry_Inc.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "7c15728e-1e60-4203-a4bc-04742fb3c97a",
+                            ConcurrencyStamp = "1011ad29-b813-42a1-ac79-dae3b4d2558b",
                             Dob = new DateTime(2000, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "henry@gmail.com",
                             EmailConfirmed = true,
@@ -164,7 +164,7 @@ namespace Henry_Inc.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "henry@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAEC/90TCCS+mTrPGuU72v8PZgKvYZoEAh6CJxA3JpW1b/6xf01oZDXjYhyl/QJUpZwA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAELnKNISMmHRitliCByye4x/xxFE3nAIRg1ZcClzJCTj3VbGJYxHHtkdr33FVafec1Q==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -513,7 +513,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 8, 8, 7, 17, 46, 926, DateTimeKind.Local).AddTicks(9724),
+                            DateCreated = new DateTime(2021, 8, 11, 16, 59, 30, 644, DateTimeKind.Local).AddTicks(8640),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
