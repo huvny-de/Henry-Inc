@@ -1,6 +1,7 @@
 ﻿using Henry_Inc.Data.Entities;
 using Henry_Inc.Utilities.Exceptions;
 using Henry_Inc.ViewModels.System;
+using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
