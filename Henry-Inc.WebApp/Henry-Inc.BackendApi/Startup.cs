@@ -1,9 +1,12 @@
+using FluentValidation;
+using FluentValidation.AspNetCore;
 using Henry_Inc.Application.Catalog.Products;
 using Henry_Inc.Application.Commons;
 using Henry_Inc.Application.System.Users;
 using Henry_Inc.BackendApi.Constants;
 using Henry_Inc.Data.Contexts;
 using Henry_Inc.Data.Entities;
+using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -36,7 +39,8 @@ namespace Henry_Inc.BackendApi
         {
 
             //services.AddControllersWithViews();
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
             services.AddDbContext<MyAppContext>(options =>
                  options.UseSqlServer(Configuration.GetConnectionString(SystemConstant.MainConnectionString)));
             services.AddIdentity<AppUser, AppRole>()
@@ -51,6 +55,12 @@ namespace Henry_Inc.BackendApi
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
+
+            //Validator
+            //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
+            //services.AddTransient<IValidator<Re>, LoginRequestValidator>();
+
+
             // Swagger Extension
             services.AddSwaggerGen(c =>
             {

@@ -82,3 +82,6 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netc
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll

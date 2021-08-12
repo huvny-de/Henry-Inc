@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Henry_Inc.ViewModels.System
+namespace Henry_Inc.ViewModels.System.Users
 {
     public class LoginRequest
     {
