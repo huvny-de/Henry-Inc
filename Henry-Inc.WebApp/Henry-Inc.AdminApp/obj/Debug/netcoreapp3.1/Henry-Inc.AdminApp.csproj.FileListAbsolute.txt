@@ -35,3 +35,12 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcor
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.genruntimeconfig.cache
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.csproj.CopyComplete
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\FluentValidation.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\FluentValidation.AspNetCore.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\FluentValidation.DependencyInjectionExtensions.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.MvcApplicationPartsAssemblyInfo.cs

@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "lIbTRDeW2ShaykjWXs/kHdg9n0OviUGrRR9vwC9RlmFBj0Ii+zz4ODe9/j8/U1Czo8WWMWKhD2peMmoH6Yn9DA==",
+  "dgSpecHash": "TYKDFvAPXK8AUHRo/xPEUxspZut4pSM/mrphwkBLPRnWr+tr5XchEY36CNQdCoz+RI34svFn9uILV1pHK1ApEg==",
   "success": true,
   "projectFilePath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.AdminApp\\Henry-Inc.AdminApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Henry\\.nuget\\packages\\fluentvalidation\\10.3.0\\fluentvalidation.10.3.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\fluentvalidation.aspnetcore\\10.3.0\\fluentvalidation.aspnetcore.10.3.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\10.3.0\\fluentvalidation.dependencyinjectionextensions.10.3.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.aspnetcore.http.features\\3.1.10\\microsoft.aspnetcore.http.features.3.1.10.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.10\\microsoft.extensions.primitives.3.1.10.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\system.io.pipelines\\4.7.3\\system.io.pipelines.4.7.3.nupkg.sha512"
+  ],
   "logs": []
 }

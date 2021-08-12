@@ -5,4 +5,12 @@
     <RootNamespace>Henry_Inc.AdminApp</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\User\" />
+  </ItemGroup>
+
 </Project>
