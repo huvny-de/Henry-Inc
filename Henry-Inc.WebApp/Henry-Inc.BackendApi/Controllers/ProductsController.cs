@@ -1,6 +1,7 @@
 ﻿using Henry_Inc.Application.Catalog.Products;
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -13,6 +14,7 @@ namespace Henry_Inc.BackendApi.Controllers
     //api/products
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ProductsController : ControllerBase
     {
         private readonly IPublicProductService _pubicProductService;

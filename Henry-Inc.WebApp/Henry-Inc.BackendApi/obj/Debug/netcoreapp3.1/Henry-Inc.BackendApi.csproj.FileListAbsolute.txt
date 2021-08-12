@@ -78,3 +78,7 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netc
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.BackendApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
