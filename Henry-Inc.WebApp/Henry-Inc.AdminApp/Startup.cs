@@ -1,6 +1,7 @@
 using FluentValidation.AspNetCore;
 using Henry_Inc.AdminApp.Services;
 using Henry_Inc.ViewModels.System.Users;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,9 +28,15 @@ namespace Henry_Inc.AdminApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddHttpClient();
-
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
+               {
+                   options.LoginPath = "/Users/Login";
+                   options.AccessDeniedPath = "/Users/Forbiden/";
+               });
             services.AddControllersWithViews()
                   .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
+
+            // DI
             services.AddTransient<IUserApiClient, UserApiClient>();
 
             IMvcBuilder builder = services.AddRazorPages();
@@ -57,7 +64,7 @@ namespace Henry_Inc.AdminApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            app.UseAuthentication();
             app.UseRouting();
 
             app.UseAuthorization();

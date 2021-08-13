@@ -1,4 +1,5 @@
 ﻿using Henry_Inc.AdminApp.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -9,6 +10,7 @@ using System.Threading.Tasks;
 
 namespace Henry_Inc.AdminApp.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -20,6 +22,7 @@ namespace Henry_Inc.AdminApp.Controllers
 
         public IActionResult Index()
         {
+            var name = User.Identity.Name;
             return View();
         }
 

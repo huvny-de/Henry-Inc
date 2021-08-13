@@ -55,9 +55,21 @@
               "target": "Package",
               "version": "[3.1.2, )"
             },
+            "Microsoft.IdentityModel.Logging": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.12.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.12.0, )"
             }
           },
           "imports": [

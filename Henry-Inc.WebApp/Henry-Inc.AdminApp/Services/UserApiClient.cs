@@ -21,7 +21,7 @@ namespace Henry_Inc.AdminApp.Services
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5001");
+            client.BaseAddress = new Uri("https://localhost:5111");
             var response = await client.PostAsync("/api/users/authenticate", httpContent);
             var token = await response.Content.ReadAsStringAsync();
             return token;
