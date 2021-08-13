@@ -1,4 +1,5 @@
-﻿using Henry_Inc.ViewModels.System;
+﻿using Henry_Inc.ViewModels.Commons;
+using Henry_Inc.ViewModels.System;
 using Henry_Inc.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,6 @@ namespace Henry_Inc.Application.System.Users
     {
         Task<string> Authenticate(LoginRequest request);
         Task<bool> Register(RegisterRequest request);
-
+        Task<PagedResult<UserViewModel>> GetUserPaging(GetUserPagingRequest request);
     }
 }

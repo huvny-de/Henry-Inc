@@ -1,4 +1,5 @@
-﻿using Henry_Inc.ViewModels.System.Users;
+﻿using Henry_Inc.ViewModels.Commons;
+using Henry_Inc.ViewModels.System.Users;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,8 @@ namespace Henry_Inc.AdminApp.Services
     public interface IUserApiClient
     {
         Task<string> Authenticate(LoginRequest request);
+
+        Task<PagedResult<UserViewModel>> GetUsersPagings(GetUserPagingRequest request);
+
     }
 }

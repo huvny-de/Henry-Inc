@@ -36,6 +36,11 @@ namespace Henry_Inc.AdminApp
             services.AddControllersWithViews()
                   .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>());
 
+            services.AddSession(options =>
+            {
+                options.IdleTimeout = TimeSpan.FromMinutes(30);
+            });
+
             // DI
             services.AddTransient<IUserApiClient, UserApiClient>();
 
@@ -64,11 +69,11 @@ namespace Henry_Inc.AdminApp
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseAuthentication();
+            app.UseAuthentication(); //+
             app.UseRouting();
-
+            
             app.UseAuthorization();
-
+            app.UseSession(); // +
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(

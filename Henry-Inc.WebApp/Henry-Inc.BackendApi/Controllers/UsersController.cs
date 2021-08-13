@@ -49,5 +49,12 @@ namespace Henry_Inc.BackendApi.Controllers
             }
             return Ok();
         }
+        //http://localhost/api/users/paging?pageIndex=1&pageSize=10&Keyword=?
+        [HttpGet("paging")]
+        public async Task<IActionResult> GetAllPaging([FromQuery] GetUserPagingRequest request)
+        {
+            var users = await _userService.GetUserPaging(request);
+            return Ok(users);
+        }
     }
 }

@@ -2,6 +2,7 @@
 using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Logging;
@@ -27,9 +28,20 @@ namespace Henry_Inc.AdminApp.Controllers
             _configuration = configuration;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 10)
         {
-            return View();
+            var sessions = HttpContext.Session.GetString("Token");
+
+            var request = new GetUserPagingRequest()
+            {
+                BearerToken = sessions,
+                Keyword = Keyword,
+                PageIndex = pageIndex,
+                PageSize = pageSize
+            };
+
+            var data = await _userApiClient.GetUsersPagings(request);
+            return View(data);
         }
         [HttpGet]
         public async Task<IActionResult> Login()
@@ -42,6 +54,7 @@ namespace Henry_Inc.AdminApp.Controllers
         {
             if (!ModelState.IsValid)
                 return View(ModelState);
+
             var token = await _userApiClient.Authenticate(request);
 
             var userPrincipal = this.ValidateToken(token);
@@ -50,6 +63,9 @@ namespace Henry_Inc.AdminApp.Controllers
                 ExpiresUtc = DateTimeOffset.UtcNow.AddMinutes(10),
                 IsPersistent = true
             };
+
+            HttpContext.Session.SetString("Token", token);
+
             await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
                 userPrincipal,
@@ -62,6 +78,7 @@ namespace Henry_Inc.AdminApp.Controllers
         {
             await HttpContext.SignOutAsync(
                CookieAuthenticationDefaults.AuthenticationScheme);
+            HttpContext.Session.Remove("Token");
             return RedirectToAction("Login", "Users");
 
         }

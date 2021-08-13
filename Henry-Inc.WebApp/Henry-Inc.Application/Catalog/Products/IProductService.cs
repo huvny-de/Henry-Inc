@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Henry_Inc.Application.Catalog.Products
 {
-    public interface IManageProductService
+    public interface IProductService
     {
         Task<int> Create(ProductCreateRequest request);
         Task<int> Update(ProductUpdateRequest request);
@@ -23,6 +23,8 @@ namespace Henry_Inc.Application.Catalog.Products
         Task<int> RemoveImage(int imageId);
         Task<List<ProductImageViewModel>> GetListImages(int productId);
         Task<ProductImageViewModel> GetImageById(int imageId);
+        Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string Id, GetPublicProductPagingRequest request);
+
 
 
     }

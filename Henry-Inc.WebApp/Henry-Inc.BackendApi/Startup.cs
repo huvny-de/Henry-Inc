@@ -47,8 +47,7 @@ namespace Henry_Inc.BackendApi
                 .AddEntityFrameworkStores<MyAppContext>()
                 .AddDefaultTokenProviders();
             // DI 
-            services.AddTransient<IPublicProductService, PublicProductService>();
-            services.AddTransient<IManageProductService, ManageProductService>();
+            services.AddTransient<IProductService, ProductService>();
             services.AddTransient<IStorageService, FileStorageService>();
             // Identity DI
             services.AddTransient<UserManager<AppUser>, UserManager<AppUser>>();
