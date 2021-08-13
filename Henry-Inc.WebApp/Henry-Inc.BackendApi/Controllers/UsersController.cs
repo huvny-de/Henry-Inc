@@ -22,7 +22,7 @@ namespace Henry_Inc.BackendApi.Controllers
         }
         [HttpPost("authenticate")]
         [AllowAnonymous]
-        public async Task<IActionResult> Authenticate([FromForm] LoginRequest request)
+        public async Task<IActionResult> Authenticate([FromBody] LoginRequest request)
         {
             if (!ModelState.IsValid)
             {
@@ -33,7 +33,7 @@ namespace Henry_Inc.BackendApi.Controllers
             {
                 return BadRequest("Username or password is incorrect.");
             }
-            return Ok(new { token = resultToken });
+            return Ok(resultToken);
         }
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromForm] RegisterRequest request)
