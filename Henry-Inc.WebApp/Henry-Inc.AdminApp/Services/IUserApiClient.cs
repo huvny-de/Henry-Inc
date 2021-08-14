@@ -13,5 +13,6 @@ namespace Henry_Inc.AdminApp.Services
 
         Task<PagedResult<UserViewModel>> GetUsersPagings(GetUserPagingRequest request);
 
+        Task<bool> RegisterUser(RegisterRequest request);
     }
 }
