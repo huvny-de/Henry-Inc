@@ -39,7 +39,7 @@ namespace Henry_Inc.AdminApp.Controllers
         public async Task<IActionResult> Index(LoginRequest request)
         {
             if (!ModelState.IsValid)
-                return View();
+                return View(ModelState);
 
 
             var token = await _userApiClient.Authenticate(request);
