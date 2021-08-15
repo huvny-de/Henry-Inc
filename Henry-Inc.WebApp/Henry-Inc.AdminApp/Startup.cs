@@ -30,7 +30,7 @@ namespace Henry_Inc.AdminApp
             services.AddHttpClient();
             services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
                {
-                   options.LoginPath = "/Users/Login";
+                   options.LoginPath = "/Login/Index";
                    options.AccessDeniedPath = "/Users/Forbiden/";
                });
             services.AddControllersWithViews()
