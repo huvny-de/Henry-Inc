@@ -82,7 +82,8 @@ namespace Henry_Inc.Application.System.Users
                 Id = user.Id,
                 FirstName = user.FirstName,
                 LastName = user.LastName,
-                Email = user.LastName,
+                UserName = user.UserName,
+                Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
                 Dob = user.Dob
             };
@@ -108,14 +109,16 @@ namespace Henry_Inc.Application.System.Users
                     UserName = x.UserName,
                     FirstName = x.FirstName,
                     LastName = x.LastName,
-                    Email = x.LastName,
+                    Email = x.Email,
                     PhoneNumber = x.PhoneNumber
 
                 }).ToListAsync();
             //4. Select and projection
             var pagedResult = new PagedResult<UserViewModel>()
             {
-                TotalRecord = totalRow,
+                TotalRecords = totalRow,
+                PageIndex = request.PageIndex,
+                PageSize = request.PageSize,
                 Items = data,
             };
             return new ApiSuccessResult<PagedResult<UserViewModel>>(pagedResult);
@@ -139,9 +142,11 @@ namespace Henry_Inc.Application.System.Users
             {
                 Dob = request.Dob,
                 Email = request.Email,
+                NormalizedEmail = request.Email,
                 FirstName = request.FirstName,
                 LastName = request.LastName,
                 UserName = request.UserName,
+                NormalizedUserName = request.UserName,
                 PhoneNumber = request.PhoneNumber,
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true
@@ -165,6 +170,7 @@ namespace Henry_Inc.Application.System.Users
 
             user.Dob = request.Dob;
             user.Email = request.Email;
+            user.NormalizedEmail = request.Email;
             user.FirstName = request.FirstName;
             user.LastName = request.LastName;
             user.PhoneNumber = request.PhoneNumber;

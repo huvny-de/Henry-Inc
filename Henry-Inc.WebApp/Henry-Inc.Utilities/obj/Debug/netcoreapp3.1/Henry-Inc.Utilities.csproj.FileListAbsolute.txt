@@ -6,4 +6,3 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Utilities\obj\Debug\netco
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Utilities\obj\Debug\netcoreapp3.1\Henry-Inc.Utilities.csproj.CoreCompileInputs.cache
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Utilities\obj\Debug\netcoreapp3.1\Henry-Inc.Utilities.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Utilities\obj\Debug\netcoreapp3.1\Henry-Inc.Utilities.pdb
-C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Utilities\obj\Debug\netcoreapp3.1\Henry-Inc.Utilities.csproj.AssemblyReference.cache
