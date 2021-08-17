@@ -433,3 +433,4 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcor
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Edit.cshtml.g.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\Details.cshtml.g.cs
