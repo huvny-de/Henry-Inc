@@ -4,6 +4,7 @@ using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -40,7 +41,7 @@ namespace Henry_Inc.AdminApp
             {
                 options.IdleTimeout = TimeSpan.FromMinutes(30);
             });
-
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             // DI
             services.AddTransient<IUserApiClient, UserApiClient>();
 
@@ -71,7 +72,7 @@ namespace Henry_Inc.AdminApp
             app.UseStaticFiles();
             app.UseAuthentication(); //+
             app.UseRouting();
-            
+
             app.UseAuthorization();
             app.UseSession(); // +
             app.UseEndpoints(endpoints =>

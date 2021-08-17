@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Henry_Inc.ViewModels.Commons
 {
-    public class PagingResquestBase : RequestBase
+    public class PagingResquestBase 
     {
         public int PageIndex { get; set; }
         public int PageSize { get; set; }
