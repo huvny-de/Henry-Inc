@@ -109,14 +109,15 @@ namespace Henry_Inc.Application.System.Users
         public async Task<ApiResult<PagedResult<UserViewModel>>> GetUserPaging(GetUserPagingRequest request)
         {
             var query = _userManager.Users;
+
             if (!string.IsNullOrEmpty(request.Keyword))
             {
                 query = query.Where(x => x.UserName.Contains(request.Keyword)
-                || x.PhoneNumber.Contains(request.Keyword)
-                || x.Email.Contains(request.Keyword));
-
+                || x.PhoneNumber.Contains(request.Keyword));
             }
+
             int totalRow = await query.CountAsync();
+
             var data = await query.Skip((request.PageIndex - 1) * request.PageSize)
                 .Take(request.PageSize)
                 .Select(x => new UserViewModel()
@@ -135,11 +136,10 @@ namespace Henry_Inc.Application.System.Users
                 TotalRecords = totalRow,
                 PageIndex = request.PageIndex,
                 PageSize = request.PageSize,
-                Items = data,
+                Items = data
             };
             return new ApiSuccessResult<PagedResult<UserViewModel>>(pagedResult);
         }
-
 
         public async Task<ApiResult<bool>> Register(RegisterRequest request)
         {

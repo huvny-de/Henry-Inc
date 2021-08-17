@@ -5,14 +5,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
-using Microsoft.IdentityModel.Logging;
-using Microsoft.IdentityModel.Tokens;
 using System;
-using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
-using System.Security.Claims;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Henry_Inc.AdminApp.Controllers
@@ -27,18 +20,18 @@ namespace Henry_Inc.AdminApp.Controllers
             _userApiClient = userApiClient;
             _configuration = configuration;
         }
-
-        public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string keyword, int pageIndex = 1, int pageSize = 10)
         {
             var request = new GetUserPagingRequest()
 
             {
-                Keyword = Keyword,
+                Keyword = keyword,
                 PageIndex = pageIndex,
                 PageSize = pageSize
             };
 
             var data = await _userApiClient.GetUsersPagings(request);
+            ViewBag.Keyword = keyword;
             return View(data.ResultObj);
         }
         //Create
@@ -141,7 +134,7 @@ namespace Henry_Inc.AdminApp.Controllers
             await HttpContext.SignOutAsync(
                CookieAuthenticationDefaults.AuthenticationScheme);
             HttpContext.Session.Remove("Token");
-            return RedirectToAction("Login", "Users");
+            return RedirectToAction("Index", "Login");
 
         }
 
