@@ -29,7 +29,10 @@ namespace Henry_Inc.AdminApp.Controllers
                 PageIndex = pageIndex,
                 PageSize = pageSize
             };
-
+            if (TempData != null)
+            {
+                ViewBag.SuccessMsg = TempData["result"];
+            }
             var data = await _userApiClient.GetUsersPagings(request);
             ViewBag.Keyword = keyword;
             return View(data.ResultObj);
@@ -50,6 +53,7 @@ namespace Henry_Inc.AdminApp.Controllers
             var result = await _userApiClient.RegisterUser(request);
             if (result.IsSucceeded)
             {
+                TempData["result"] = "Create new user successful";
                 return RedirectToAction("Index");
             }
             ModelState.AddModelError("", result.Message);
@@ -87,6 +91,8 @@ namespace Henry_Inc.AdminApp.Controllers
             var result = await _userApiClient.UpdateUser(request.Id, request);
             if (result.IsSucceeded)
             {
+                TempData["result"] = "Update user successful";
+
                 return RedirectToAction("Index");
             }
             ModelState.AddModelError("", result.Message);
@@ -123,6 +129,7 @@ namespace Henry_Inc.AdminApp.Controllers
             var result = await _userApiClient.DeleteUser(request.Id);
             if (result.IsSucceeded)
             {
+                TempData["result"] = "Delete successful";
                 return RedirectToAction("Index");
             }
             ModelState.AddModelError("", result.Message);
