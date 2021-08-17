@@ -28,7 +28,7 @@ namespace Henry_Inc.AdminApp.Controllers
             _configuration = configuration;
         }
 
-        public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 1)
         {
 
             var request = new GetUserPagingRequest()
@@ -99,7 +99,17 @@ namespace Henry_Inc.AdminApp.Controllers
             ModelState.AddModelError("", result.Message);
             return View(request);
         }
-
+        //Details
+        [HttpGet]
+        public async Task<IActionResult> Details(Guid id)
+        {
+            var result = await _userApiClient.GetById(id);
+            if (result.IsSucceeded)
+            {
+                return View(result.ResultObj);
+            }
+            return RedirectToAction("Error", "Home");
+        }
         [HttpPost]
         public async Task<IActionResult> Logout()
         {
