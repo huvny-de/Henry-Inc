@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Henry_Inc.AdminApp.Controllers.Components
 {
-    public class PagedViewComponent : ViewComponent
+    public class PagerViewComponent : ViewComponent
     {
         public Task<IViewComponentResult> InvokeAsync(PagedResultBase result)
         {

@@ -28,7 +28,7 @@ namespace Henry_Inc.AdminApp.Controllers
             _configuration = configuration;
         }
 
-        public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 10)
+        public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 1)
         {
 
             var request = new GetUserPagingRequest()
