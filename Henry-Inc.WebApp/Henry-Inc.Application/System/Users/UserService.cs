@@ -90,6 +90,22 @@ namespace Henry_Inc.Application.System.Users
             return new ApiSuccessResult<UserViewModel>(userVM);
         }
 
+        public async Task<ApiResult<bool>> Delete(Guid id)
+        {
+            var user = await _userManager.FindByIdAsync(id.ToString());
+            if (user == null)
+            {
+                return new ApiErrorResult<bool>("User Not Found");
+            }
+           var result = await  _userManager.DeleteAsync(user);
+            if (result.Succeeded)
+            {
+                return new ApiSuccessResult<bool>();
+
+            }
+            return new ApiErrorResult<bool>("Delete failed");
+        }
+
         public async Task<ApiResult<PagedResult<UserViewModel>>> GetUserPaging(GetUserPagingRequest request)
         {
             var query = _userManager.Users;

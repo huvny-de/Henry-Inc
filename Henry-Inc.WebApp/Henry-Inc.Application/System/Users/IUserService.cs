@@ -18,5 +18,7 @@ namespace Henry_Inc.Application.System.Users
         Task<ApiResult<PagedResult<UserViewModel>>> GetUserPaging(GetUserPagingRequest request);
 
         Task<ApiResult<UserViewModel>> GetById(Guid id);
+
+        Task<ApiResult<bool>> Delete(Guid id);
     }
 }

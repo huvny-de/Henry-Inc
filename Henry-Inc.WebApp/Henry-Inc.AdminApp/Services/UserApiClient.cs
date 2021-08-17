@@ -45,6 +45,22 @@ namespace Henry_Inc.AdminApp.Services
 
         }
 
+        public async Task<ApiResult<bool>> DeleteUser(Guid id)
+        {
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
+            var client = _httpClientFactory.CreateClient();
+            client.BaseAddress = new Uri("https://localhost:5111");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+            var response = await client.DeleteAsync(
+                $"/api/users/{id}");
+            var body = await response.Content.ReadAsStringAsync();
+            if (response.IsSuccessStatusCode)
+            {
+                return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(body);
+            }
+            return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(body);
+        }
+
         public async Task<ApiResult<UserViewModel>> GetById(Guid id)
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");

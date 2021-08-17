@@ -77,5 +77,12 @@ namespace Henry_Inc.BackendApi.Controllers
             var users = await _userService.GetById(id);
             return Ok(users);
         }
+        //Delete
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var result = await _userService.Delete(id);
+            return Ok(result);
+        }
     }
 }
