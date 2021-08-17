@@ -42,7 +42,7 @@ namespace Henry_Inc.Application.System.Users
             var user = await _userManager.FindByNameAsync(request.UserName);
             if (user == null)
             {
-                return null;
+                return new ApiErrorResult<string>("User not exist");
             }
             var result = await _signInManager.PasswordSignInAsync(request.UserName, request.Password, request.RememberMe, true);
             if (!result.Succeeded)
@@ -97,7 +97,7 @@ namespace Henry_Inc.Application.System.Users
             {
                 return new ApiErrorResult<bool>("User Not Found");
             }
-           var result = await  _userManager.DeleteAsync(user);
+            var result = await _userManager.DeleteAsync(user);
             if (result.Succeeded)
             {
                 return new ApiSuccessResult<bool>();

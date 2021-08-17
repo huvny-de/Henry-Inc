@@ -15,6 +15,9 @@
     <div class="card mb-4">
         <div class="card-header">
             <a class="btn btn-success" asp-action="Create" asp-controller="Users">Create</a>
+            <form action="Index" method="get"></form>
+            <input type="text"  name="Keyword" value="" class="form-control" />
+            <button type="submit">Search</button>
         </div>
         <div class="card-body">
             <table id="datatablesSimple">

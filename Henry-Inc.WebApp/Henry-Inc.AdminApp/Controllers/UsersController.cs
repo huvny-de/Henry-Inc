@@ -30,8 +30,8 @@ namespace Henry_Inc.AdminApp.Controllers
 
         public async Task<IActionResult> Index(string Keyword, int pageIndex = 1, int pageSize = 10)
         {
-
             var request = new GetUserPagingRequest()
+
             {
                 Keyword = Keyword,
                 PageIndex = pageIndex,
