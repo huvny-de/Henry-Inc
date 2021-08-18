@@ -84,5 +84,20 @@ namespace Henry_Inc.BackendApi.Controllers
             var result = await _userService.Delete(id);
             return Ok(result);
         }
+        // Role Assign
+        [HttpPut("{id}/roles")]
+        public async Task<IActionResult> RoleAssign(Guid id, [FromBody] RoleAssignRequest request)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
+            var result = await _userService.RoleAssign(id, request);
+
+            if (!result.IsSucceeded)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
     }
 }

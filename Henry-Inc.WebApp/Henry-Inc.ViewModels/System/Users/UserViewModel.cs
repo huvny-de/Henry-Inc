@@ -22,5 +22,7 @@ namespace Henry_Inc.ViewModels.System.Users
         [DataType(DataType.Date)]
         public DateTime Dob { get; set; }
 
+        public IList<string> Roles { get; set; }
+
     }
 }

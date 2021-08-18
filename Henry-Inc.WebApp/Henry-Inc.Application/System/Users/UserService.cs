@@ -77,6 +77,7 @@ namespace Henry_Inc.Application.System.Users
             {
                 return new ApiErrorResult<UserViewModel>("User Not Found");
             }
+            var roles = await _userManager.GetRolesAsync(user);
             var userVM = new UserViewModel()
             {
                 Id = user.Id,
@@ -85,7 +86,8 @@ namespace Henry_Inc.Application.System.Users
                 UserName = user.UserName,
                 Email = user.Email,
                 PhoneNumber = user.PhoneNumber,
-                Dob = user.Dob
+                Dob = user.Dob,
+                Roles = roles
             };
             return new ApiSuccessResult<UserViewModel>(userVM);
         }
@@ -197,6 +199,30 @@ namespace Henry_Inc.Application.System.Users
                 return new ApiSuccessResult<bool>();
             }
             return new ApiErrorResult<bool>("Update  failed");
+        }
+
+        public async Task<ApiResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
+        {
+
+            var user = await _userManager.FindByIdAsync(id.ToString());
+            if (user == null)
+            {
+                return new ApiErrorResult<bool>("User not exist");
+            }
+
+            var removeRoles = request.Roles.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+            await _userManager.RemoveFromRolesAsync(user, removeRoles);
+
+            var addedRoles = request.Roles.Where(x => x.Selected).Select(x => x.Name).ToList();
+
+            foreach (var roleName in addedRoles)
+            {
+                if (await _userManager.IsInRoleAsync(user, roleName) == false)
+                {
+                    await _userManager.AddToRoleAsync(user, roleName);
+                }
+            }
+            return new ApiSuccessResult<bool>();
         }
     }
 }

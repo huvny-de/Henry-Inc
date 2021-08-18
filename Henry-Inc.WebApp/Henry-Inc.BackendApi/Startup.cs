@@ -2,6 +2,7 @@ using FluentValidation;
 using FluentValidation.AspNetCore;
 using Henry_Inc.Application.Catalog.Products;
 using Henry_Inc.Application.Commons;
+using Henry_Inc.Application.System.Roles;
 using Henry_Inc.Application.System.Users;
 using Henry_Inc.BackendApi.Constants;
 using Henry_Inc.Data.Contexts;
@@ -54,6 +55,8 @@ namespace Henry_Inc.BackendApi
             services.AddTransient<SignInManager<AppUser>, SignInManager<AppUser>>();
             services.AddTransient<RoleManager<AppRole>, RoleManager<AppRole>>();
             services.AddTransient<IUserService, UserService>();
+            services.AddTransient<IRoleService, RoleService>();
+
 
             //Validator
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();
