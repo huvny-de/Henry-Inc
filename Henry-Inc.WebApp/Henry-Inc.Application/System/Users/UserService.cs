@@ -211,6 +211,14 @@ namespace Henry_Inc.Application.System.Users
             }
 
             var removeRoles = request.Roles.Where(x => x.Selected == false).Select(x => x.Name).ToList();
+
+            foreach (var roleName in removeRoles)
+            {
+                if (await _userManager.IsInRoleAsync(user, roleName) == true)
+                {
+                    await _userManager.RemoveFromRoleAsync(user, roleName);
+                }
+            }
             await _userManager.RemoveFromRolesAsync(user, removeRoles);
 
             var addedRoles = request.Roles.Where(x => x.Selected).Select(x => x.Name).ToList();
