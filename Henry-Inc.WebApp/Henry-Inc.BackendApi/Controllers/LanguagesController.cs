@@ -19,11 +19,11 @@ namespace Henry_Inc.BackendApi.Controllers
         {
             _languagService = languageService;
         }
-
+        [HttpGet()]
         public async Task<IActionResult> GetAll()
         {
-            var roles = await _languagService.GetAll();
-            return Ok(roles);
+            var languages = await _languagService.GetAll();
+            return Ok(languages);
         }
     }
 }
