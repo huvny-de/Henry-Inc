@@ -1,4 +1,5 @@
 ﻿using Henry_Inc.AdminApp.Services;
+using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -56,7 +57,8 @@ namespace Henry_Inc.AdminApp.Controllers
                 IsPersistent = true
             };
 
-            HttpContext.Session.SetString("Token", result.ResultObj);
+            HttpContext.Session.SetString(SystemConstant.AppSettings.DefaultLanguageId, _configuration[SystemConstant.AppSettings.DefaultLanguageId]);
+            HttpContext.Session.SetString(SystemConstant.AppSettings.Token, result.ResultObj);
 
             await HttpContext.SignInAsync(
                 CookieAuthenticationDefaults.AuthenticationScheme,
