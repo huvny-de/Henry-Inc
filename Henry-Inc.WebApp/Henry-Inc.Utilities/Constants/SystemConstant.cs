@@ -12,6 +12,7 @@ namespace Henry_Inc.Utilities.Constants
 
             public const string Token = "Token";
 
+            public const string BaseAddress = "https://localhost:5111";
         }
     }
 }
