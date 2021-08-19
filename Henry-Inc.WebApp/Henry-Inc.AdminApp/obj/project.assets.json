@@ -9152,6 +9152,7 @@
     ".NETCoreApp,Version=v3.1": [
       "FluentValidation.AspNetCore >= 10.3.0",
       "Henry-Inc.Application >= 1.0.0",
+      "Henry-Inc.Utilities >= 1.0.0",
       "Henry-Inc.ViewModels >= 1.0.0",
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 3.1.2",
       "Microsoft.AspNetCore.Session >= 2.2.0",
@@ -9195,6 +9196,9 @@
           "projectReferences": {
             "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj": {
               "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj"
+            },
+            "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
+              "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj"
             },
             "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
               "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj"
