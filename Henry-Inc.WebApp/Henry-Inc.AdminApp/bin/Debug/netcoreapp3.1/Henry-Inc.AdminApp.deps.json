@@ -33,6 +33,7 @@
         "dependencies": {
           "FluentValidation.AspNetCore": "10.3.0",
           "Henry-Inc.Application": "1.0.0",
+          "Henry-Inc.Utilities": "1.0.0",
           "Henry-Inc.ViewModels": "1.0.0",
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.2",
           "Microsoft.AspNetCore.Session": "2.2.0",

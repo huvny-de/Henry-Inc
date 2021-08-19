@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Henry-Inc.Application\Henry-Inc.Application.csproj" />
+    <ProjectReference Include="..\Henry-Inc.Utilities\Henry-Inc.Utilities.csproj" />
     <ProjectReference Include="..\Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj" />
   </ItemGroup>
 
