@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Henry_Inc.AdminApp.Controllers
 {
-    public class ProductController : Controller
+    public class ProductController : BaseController
     {
         private readonly IProductApiClient _productApiClient;
         private readonly IConfiguration _configuration;
@@ -31,7 +31,7 @@ namespace Henry_Inc.AdminApp.Controllers
                 PageIndex = pageIndex,
                 PageSize = pageSize,
                 LanguageId = languageId
-                
+
             };
 
             if (TempData != null)
@@ -43,6 +43,28 @@ namespace Henry_Inc.AdminApp.Controllers
             ViewBag.Keyword = keyword;
 
             return View(data);
+        }
+        [HttpGet]
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            var result = await _productApiClient.CreateProduct(request);
+            if (result)
+            {
+                TempData["result"] = "Create new product successful";
+                return RedirectToAction("Index");
+            }
+            ModelState.AddModelError("", "Create new product failed");
+            return View();
         }
     }
 }

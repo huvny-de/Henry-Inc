@@ -439,3 +439,4 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcor
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Users\RoleAssign.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Navigation\Default.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Index.cshtml.g.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Create.cshtml.g.cs
