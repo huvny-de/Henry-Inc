@@ -107,13 +107,14 @@ namespace Henry_Inc.Application.Catalog.Products
                         join pt in _context.ProductTranslations on p.Id equals pt.ProductId
                         join pic in _context.ProductInCategories on p.Id equals pic.ProductId
                         join c in _context.Categories on pic.CategoryId equals c.Id
+                        where pt.LanguageId == request.LanguageId
                         select new { p, pt, pic };
             //2. Filter
             if (!string.IsNullOrEmpty(request.Keyword))
             {
                 query = query.Where(x => x.pt.Name.Contains(request.Keyword));
             }
-            if (request.CategoryIds.Count > 0)
+            if (request.CategoryIds != null && request.CategoryIds.Count > 0)
             {
                 query = query.Where(p => request.CategoryIds.Contains(p.pic.CategoryId));
             }
@@ -217,11 +218,11 @@ namespace Henry_Inc.Application.Catalog.Products
                 productImage.FileSize = request.ImageFile.Length;
             }
             _context.ProductImages.Add(productImage);
-             await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();
             return productImage.Id;
         }
 
-        public async Task<int> RemoveImage(int imageId )
+        public async Task<int> RemoveImage(int imageId)
         {
             var productImage = await _context.ProductImages.FindAsync(imageId);
             if (productImage == null)
@@ -230,7 +231,7 @@ namespace Henry_Inc.Application.Catalog.Products
             return await _context.SaveChangesAsync();
         }
 
-        public async Task<int> UpdateImage( int imageId, ProductImageUpdateRequest request)
+        public async Task<int> UpdateImage(int imageId, ProductImageUpdateRequest request)
         {
             var productImage = await _context.ProductImages.FindAsync(imageId);
             if (productImage == null)
