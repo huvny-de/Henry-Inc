@@ -1,6 +1,7 @@
 ﻿using Henry_Inc.AdminApp.Services;
 using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.Catalogs.Products;
+using Henry_Inc.ViewModels.Commons;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -60,27 +61,55 @@ namespace Henry_Inc.AdminApp.Controllers
 
             return View(data);
         }
+
         [HttpGet]
-        public IActionResult Create()
+        public async Task<IActionResult> CategoryAssign(int id)
         {
-            return View();
+
+            var categoryAssignRequest = await GetCategoryAssignRequest(id);
+
+            return View(categoryAssignRequest);
+
         }
         [HttpPost]
-        [Consumes("multipart/form-data")]
-        public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
+        public async Task<IActionResult> CategoryAssign(CategoryAssignRequest request)
         {
             if (!ModelState.IsValid)
             {
                 return View();
             }
-            var result = await _productApiClient.CreateProduct(request);
-            if (result)
+
+            var result = await _productApiClient.CategoryAssign(request.Id, request);
+
+            if (result.IsSucceeded)
             {
-                TempData["result"] = "Create new product successful";
+                TempData["result"] = "Category assign successful";
+
                 return RedirectToAction("Index");
             }
-            ModelState.AddModelError("", "Create new product failed");
-            return View();
+            ModelState.AddModelError("", result.Message);
+
+            var roleAssignRequest = await GetCategoryAssignRequest(request.Id);
+
+            return View(request);
+        }
+        private async Task<CategoryAssignRequest> GetCategoryAssignRequest(int id)
+        {
+            var languageId = HttpContext.Session.GetString(SystemConstant.AppSettings.DefaultLanguageId);
+            var productObj = await _productApiClient.GetById(id, languageId);
+            var categories = await _categoryApiClient.GetAll(languageId);
+            var categoryAssignRequest = new CategoryAssignRequest();
+
+            foreach (var category in categories)
+            {
+                categoryAssignRequest.Categories.Add(new SelectedItem()
+                {
+                    Id = category.Id.ToString(),
+                    Name = category.Name,
+                    Selected = productObj.Categories.Contains(category.Name)
+                });
+            }
+            return categoryAssignRequest;
         }
     }
 }

@@ -73,7 +73,9 @@
                                 <th>
                                     Stock
                                 </th>
-                                <th></th>
+                                @*<th>
+                                    Category
+                                </th>*@
                             </tr>
                         </thead>
                         <tbody>
@@ -95,11 +97,14 @@
                                     <td>
                                         @Html.DisplayFor(modelItem => item.Stock)
                                     </td>
-
+                                    @*<td>
+                                        @Html.DisplayFor(modelItem => string.Join(",",item.Categories))
+                                    </td>*@
                                     <td>
                                         @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
                                         @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                                         @Html.ActionLink("Delete", "Delete", new { id = item.Id }) |
+                                        @Html.ActionLink("Category Assign", "CategoryAssign", new { id = item.Id }) 
                                     </td>
                                 </tr>
                             }
