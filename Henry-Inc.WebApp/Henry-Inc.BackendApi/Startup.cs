@@ -1,5 +1,6 @@
 using FluentValidation;
 using FluentValidation.AspNetCore;
+using Henry_Inc.Application.Catalog.Categories;
 using Henry_Inc.Application.Catalog.Products;
 using Henry_Inc.Application.Commons;
 using Henry_Inc.Application.System.Languages;
@@ -58,8 +59,7 @@ namespace Henry_Inc.BackendApi
             services.AddTransient<IUserService, UserService>();
             services.AddTransient<IRoleService, RoleService>();
             services.AddTransient<ILanguageService, LanguageService>();
-
-
+            services.AddTransient<ICategoryService, CategoryService>();
 
             //Validator
             //services.AddTransient<IValidator<LoginRequest>, LoginRequestValidator>();

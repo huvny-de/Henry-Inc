@@ -75,7 +75,7 @@ namespace Henry_Inc.AdminApp.Services
             var data = await GetAsync<PagedResult<ProductViewModel>>(
                 $"api/products/paging?pageIndex={request.PageIndex}" +
                 $"&pageSize={request.PageSize}" +
-                $"&Keyword={request.Keyword}&languageId={request.LanguageId}");
+                $"&Keyword={request.Keyword}&languageId={request.LanguageId}&categoryId={request.CategoryId}");
 
             return data;
         }
