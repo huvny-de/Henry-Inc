@@ -1,4 +1,5 @@
 ﻿
+using Henry_Inc.Application.Commons;
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
 using Henry_Inc.ViewModels.Commons;
@@ -24,8 +25,7 @@ namespace Henry_Inc.Application.Catalog.Products
         Task<List<ProductImageViewModel>> GetListImages(int productId);
         Task<ProductImageViewModel> GetImageById(int imageId);
         Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string Id, GetPublicProductPagingRequest request);
-
-
+        Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request);
 
     }
 }

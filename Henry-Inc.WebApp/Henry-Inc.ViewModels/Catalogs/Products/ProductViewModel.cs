@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Henry_Inc.ViewModels.Catalogs.Categories;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -19,5 +20,7 @@ namespace Henry_Inc.ViewModels.Catalogs.Products
         public string SeoTitle { set; get; }
         public string SeoAlias { get; set; }
         public string LanguageId { set; get; }
+        public List<string> Categories { get; set; } = new List<string>();
+
     }
 }
