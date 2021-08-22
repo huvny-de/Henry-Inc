@@ -15,13 +15,13 @@
   //      "ASPNETCORE_ENVIRONMENT": "Development"
   //    }
   //  },
-  "Henry_Inc.AdminApp": {
-    "commandName": "Project",
-    "launchBrowser": true,
-    "applicationUrl": "https://localhost:5001",
-    "environmentVariables": {
-      "ASPNETCORE_ENVIRONMENT": "Development"
+    "Henry_Inc.AdminApp": {
+      "commandName": "Project",
+      "launchBrowser": false,
+      "applicationUrl": "https://localhost:5001",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
     }
   }
-}
 //}
