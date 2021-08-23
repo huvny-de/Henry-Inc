@@ -35,3 +35,15 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcorea
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.genruntimeconfig.cache
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.CopyComplete
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.AssemblyReference.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\en\Henry-Inc.WebApp.resources.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\vi\Henry-Inc.WebApp.resources.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\LazZiya.ExpressLocalization.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\LazZiya.TagHelpers.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ExpressLocalizationResource.en.resources
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ExpressLocalizationResource.vi.resources
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ViewLocalizationResource.en.resources
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ViewLocalizationResource.vi.resources
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.GenerateResource.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.MvcApplicationPartsAssemblyInfo.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\en\Henry-Inc.WebApp.resources.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\vi\Henry-Inc.WebApp.resources.dll
