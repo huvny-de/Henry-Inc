@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "FeiZfhrfuVFRwv0+rwkUPjVYkF+iZCZWEX3hNFY6FHuYjEXtJnAnnRrToFC6IY5wAoFwHTQUrLPDQFTD5Xu9og==",
+  "dgSpecHash": "+xoZO3EJaYLVPevQnlIfjtdcUnWYCIOimfyHjZEhxarWD/GALJ/o+atibKx/UoyQ9rphz7VC0/ntq0xjDOiL1A==",
   "success": true,
   "projectFilePath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.WebApp\\Henry-Inc.WebApp.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Henry\\.nuget\\packages\\lazziya.expresslocalization\\4.0.2\\lazziya.expresslocalization.4.0.2.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\lazziya.taghelpers\\4.0.1\\lazziya.taghelpers.4.0.1.nupkg.sha512"
+  ],
   "logs": []
 }
