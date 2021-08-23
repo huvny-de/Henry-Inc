@@ -1,4 +1,5 @@
-﻿using Henry_Inc.Application.Commons;
+﻿using Henri_Inc.ApiIntergration;
+using Henry_Inc.Application.Commons;
 using Henry_Inc.ViewModels.System.Languages;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -10,7 +11,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace Henry_Inc.AdminApp.Services
+namespace Henri_Inc.ApiIntergration
 {
     public class LanguageApiClient : BaseApiClient, ILanguageApiClient
     {

@@ -12,7 +12,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Henry_Inc.AdminApp.Services
+namespace Henri_Inc.ApiIntergration
 {
     public class UserApiClient : IUserApiClient
     {

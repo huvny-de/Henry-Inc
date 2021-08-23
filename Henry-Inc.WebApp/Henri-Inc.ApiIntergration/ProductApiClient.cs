@@ -1,4 +1,5 @@
-﻿using Henry_Inc.Application.Commons;
+﻿using Henri_Inc.ApiIntergration;
+using Henry_Inc.Application.Commons;
 using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.Catalogs.Products;
 using Henry_Inc.ViewModels.Commons;
@@ -15,7 +16,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Henry_Inc.AdminApp.Services
+namespace Henri_Inc.ApiIntergration
 {
     public class ProductApiClient : BaseApiClient, IProductApiClient
     {

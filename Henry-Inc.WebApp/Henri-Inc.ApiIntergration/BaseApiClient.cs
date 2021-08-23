@@ -9,7 +9,7 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading.Tasks;
 
-namespace Henry_Inc.AdminApp.Services
+namespace Henri_Inc.ApiIntergration
 {
     public class BaseApiClient
     {
