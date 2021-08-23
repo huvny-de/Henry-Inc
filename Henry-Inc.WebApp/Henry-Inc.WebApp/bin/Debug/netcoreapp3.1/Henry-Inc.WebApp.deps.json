@@ -31,6 +31,8 @@
     ".NETCoreApp,Version=v3.1": {
       "Henry-Inc.WebApp/1.0.0": {
         "dependencies": {
+          "LazZiya.ExpressLocalization": "4.0.2",
+          "LazZiya.TagHelpers": "4.0.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -317,8 +319,38 @@
         "runtime": {
           "Henry-Inc.WebApp.dll": {}
         },
+        "resources": {
+          "en/Henry-Inc.WebApp.resources.dll": {
+            "locale": "en"
+          },
+          "vi/Henry-Inc.WebApp.resources.dll": {
+            "locale": "vi"
+          }
+        },
         "compile": {
           "Henry-Inc.WebApp.dll": {}
+        }
+      },
+      "LazZiya.ExpressLocalization/4.0.2": {
+        "runtime": {
+          "lib/netcoreapp3.1/LazZiya.ExpressLocalization.dll": {
+            "assemblyVersion": "4.0.2.0",
+            "fileVersion": "4.0.2.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/LazZiya.ExpressLocalization.dll": {}
+        }
+      },
+      "LazZiya.TagHelpers/4.0.1": {
+        "runtime": {
+          "lib/netcoreapp3.1/LazZiya.TagHelpers.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/LazZiya.TagHelpers.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -2020,6 +2052,20 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "LazZiya.ExpressLocalization/4.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-zUacaIUrtgkROXRp3OQP9KlZXxR/hqZzRowl4RaWRB3JXkFGSfqTPEEOwf+erlg9peGzFGld4jpQp9GowJGdug==",
+      "path": "lazziya.expresslocalization/4.0.2",
+      "hashPath": "lazziya.expresslocalization.4.0.2.nupkg.sha512"
+    },
+    "LazZiya.TagHelpers/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-CVOGr0D70iyXrdeEqdI/FzaZD9A3Nwo1uBFNQ9VuWfrEHUuekbYmf1QJsndnGhjWPWq8hdyl6Lvo59sSd+DonA==",
+      "path": "lazziya.taghelpers/4.0.1",
+      "hashPath": "lazziya.taghelpers.4.0.1.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",
