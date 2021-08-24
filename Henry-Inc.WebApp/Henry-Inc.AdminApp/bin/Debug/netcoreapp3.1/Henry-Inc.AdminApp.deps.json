@@ -32,6 +32,7 @@
       "Henry-Inc.AdminApp/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "10.3.0",
+          "Henri-Inc.ApiIntergration": "1.0.0",
           "Henry-Inc.Application": "1.0.0",
           "Henry-Inc.Utilities": "1.0.0",
           "Henry-Inc.ViewModels": "1.0.0",
@@ -2465,6 +2466,19 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Henri-Inc.ApiIntergration/1.0.0": {
+        "dependencies": {
+          "Henry-Inc.Application": "1.0.0",
+          "Henry-Inc.ViewModels": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "Henri-Inc.ApiIntergration.dll": {}
+        },
+        "compile": {
+          "Henri-Inc.ApiIntergration.dll": {}
+        }
+      },
       "Henry-Inc.Application/1.0.0": {
         "dependencies": {
           "Henry-Inc.Data": "1.0.0",
@@ -2507,6 +2521,7 @@
       "Henry-Inc.ViewModels/1.0.0": {
         "dependencies": {
           "FluentValidation.AspNetCore": "10.3.0",
+          "Henry-Inc.Data": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.10"
         },
         "runtime": {
@@ -5358,6 +5373,11 @@
       "sha512": "sha512-VShQJhOxgD/5M2Z1IWm1vMaSqlbjo1zdFf8H7Ahte6bTvSUhUko/gDpAVVhGgGgTDeue4QyNg1fu1Zz2GKSEuQ==",
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    },
+    "Henri-Inc.ApiIntergration/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Henry-Inc.Application/1.0.0": {
       "type": "project",

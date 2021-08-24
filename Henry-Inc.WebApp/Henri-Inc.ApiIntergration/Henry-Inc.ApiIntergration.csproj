@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Henri_Inc.ApiIntergration</RootNamespace>
+    <AssemblyName>Henri-Inc.ApiIntergration</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Henry-Inc.Application\Henry-Inc.Application.csproj" />
+    <ProjectReference Include="..\Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>

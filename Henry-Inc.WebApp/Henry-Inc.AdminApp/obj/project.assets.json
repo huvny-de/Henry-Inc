@@ -2883,6 +2883,21 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Henri-Inc.ApiIntergration/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Henry-Inc.Application": "1.0.0",
+          "Henry-Inc.ViewModels": "1.0.0",
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "bin/placeholder/Henri-Inc.ApiIntergration.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Henri-Inc.ApiIntergration.dll": {}
+        }
+      },
       "Henry-Inc.Application/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -2936,6 +2951,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "FluentValidation.AspNetCore": "10.3.0",
+          "Henry-Inc.Data": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.10"
         },
         "compile": {
@@ -9127,6 +9143,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Henri-Inc.ApiIntergration/1.0.0": {
+      "type": "project",
+      "path": "../Henri-Inc.ApiIntergration/Henri-Inc.ApiIntergration.csproj",
+      "msbuildProject": "../Henri-Inc.ApiIntergration/Henri-Inc.ApiIntergration.csproj"
+    },
     "Henry-Inc.Application/1.0.0": {
       "type": "project",
       "path": "../Henry-Inc.Application/Henry-Inc.Application.csproj",
@@ -9151,6 +9172,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "FluentValidation.AspNetCore >= 10.3.0",
+      "Henri-Inc.ApiIntergration >= 1.0.0",
       "Henry-Inc.Application >= 1.0.0",
       "Henry-Inc.Utilities >= 1.0.0",
       "Henry-Inc.ViewModels >= 1.0.0",
@@ -9194,6 +9216,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henri-Inc.ApiIntergration\\Henri-Inc.ApiIntergration.csproj": {
+              "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henri-Inc.ApiIntergration\\Henri-Inc.ApiIntergration.csproj"
+            },
             "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj": {
               "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj"
             },

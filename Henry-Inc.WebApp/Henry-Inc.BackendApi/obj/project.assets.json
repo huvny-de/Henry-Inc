@@ -1785,6 +1785,7 @@
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
           "FluentValidation.AspNetCore": "10.3.0",
+          "Henry-Inc.Data": "1.0.0",
           "Microsoft.AspNetCore.Http.Features": "3.1.10"
         },
         "compile": {

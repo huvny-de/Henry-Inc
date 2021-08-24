@@ -26,6 +26,7 @@ namespace Henry_Inc.Application.Catalog.Products
         Task<ProductImageViewModel> GetImageById(int imageId);
         Task<PagedResult<ProductViewModel>> GetAllByCategoryId(string Id, GetPublicProductPagingRequest request);
         Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request);
+        Task<List<ProductViewModel>> GetFeaturedProducts(string languageId, int take);
 
     }
 }

@@ -1,4 +1,4 @@
-﻿using Henry_Inc.AdminApp.Services;
+﻿using Henri_Inc.ApiIntergration;
 using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.Catalogs.Products;
 using Henry_Inc.ViewModels.Commons;
@@ -89,7 +89,7 @@ namespace Henry_Inc.AdminApp.Controllers
             }
             ModelState.AddModelError("", result.Message);
 
-            var roleAssignRequest = await GetCategoryAssignRequest(request.Id);
+            //var roleAssignRequest = await GetCategoryAssignRequest(request.Id);
 
             return View(request);
         }
