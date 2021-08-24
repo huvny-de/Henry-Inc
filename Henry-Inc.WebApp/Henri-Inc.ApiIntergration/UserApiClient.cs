@@ -1,4 +1,5 @@
 ﻿using Henry_Inc.Application.Commons;
+using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.Commons;
 using Henry_Inc.ViewModels.System.Users;
 using Microsoft.AspNetCore.Http;
@@ -34,7 +35,7 @@ namespace Henri_Inc.ApiIntergration
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             var response = await client.PostAsync("/api/users/authenticate", httpContent);
             //  var token = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
@@ -49,7 +50,7 @@ namespace Henri_Inc.ApiIntergration
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.DeleteAsync(
                 $"/api/users/{id}");
@@ -65,7 +66,7 @@ namespace Henri_Inc.ApiIntergration
         {
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.GetAsync(
                 $"/api/users/{id}");
@@ -84,7 +85,7 @@ namespace Henri_Inc.ApiIntergration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
             var response = await client.GetAsync(
                 $"/api/users/paging?pageIndex="
@@ -98,7 +99,7 @@ namespace Henri_Inc.ApiIntergration
         {
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
 
             var json = JsonConvert.SerializeObject(request);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
@@ -116,7 +117,7 @@ namespace Henri_Inc.ApiIntergration
         public async Task<ApiResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
@@ -135,7 +136,7 @@ namespace Henri_Inc.ApiIntergration
         public async Task<ApiResult<bool>> UpdateUser(Guid id, UserUpdateRequest request)
         {
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
 
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);

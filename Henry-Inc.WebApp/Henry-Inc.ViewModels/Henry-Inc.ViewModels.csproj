@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="3.1.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Henry-Inc.Data\Henry-Inc.Data.csproj" />
+  </ItemGroup>
+
 </Project>

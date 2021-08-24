@@ -1,4 +1,5 @@
 ﻿using Henry_Inc.Application.Commons;
+using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.System.Roles;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
@@ -32,7 +33,7 @@ namespace Henri_Inc.ApiIntergration
             var sessions = _httpContextAccessor.HttpContext.Session.GetString("Token");
             var client = _httpClientFactory.CreateClient();
 
-            client.BaseAddress = new Uri("https://localhost:5111");
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
 
             var response = await client.GetAsync($"/api/roles");
