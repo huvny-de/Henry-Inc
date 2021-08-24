@@ -14,4 +14,10 @@
     <PackageReference Include="LazZiya.TagHelpers" Version="4.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Henri-Inc.ApiIntergration\Henri-Inc.ApiIntergration.csproj" />
+    <ProjectReference Include="..\Henry-Inc.Utilities\Henry-Inc.Utilities.csproj" />
+    <ProjectReference Include="..\Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

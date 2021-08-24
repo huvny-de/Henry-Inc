@@ -12,7 +12,11 @@ namespace Henry_Inc.Utilities.Constants
 
             public const string Token = "Token";
 
-            public const string BaseAddress = "https://localhost:5111";
+            public const string BaseAddress = "https://localhost:5002";
+        }
+        public class ProductSettings
+        {
+            public const int NumberOfFeaturedProducts = 4;
         }
     }
 }

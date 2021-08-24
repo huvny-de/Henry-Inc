@@ -7,3 +7,6 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netc
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.csproj.AssemblyReference.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.Data.dll
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.csproj.CopyComplete

@@ -1,0 +1,4 @@
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henry-Inc.ApiIntergration.csproj.AssemblyReference.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henry-Inc.ApiIntergration.AssemblyInfoInputs.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henry-Inc.ApiIntergration.AssemblyInfo.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henry-Inc.ApiIntergration.csproj.CoreCompileInputs.cache

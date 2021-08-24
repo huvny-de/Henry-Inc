@@ -262,7 +262,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
+                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

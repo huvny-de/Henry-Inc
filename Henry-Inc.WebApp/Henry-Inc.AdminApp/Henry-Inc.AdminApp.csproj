@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Henri-Inc.ApiIntergration\Henri-Inc.ApiIntergration.csproj" />
     <ProjectReference Include="..\Henry-Inc.Application\Henry-Inc.Application.csproj" />
     <ProjectReference Include="..\Henry-Inc.Utilities\Henry-Inc.Utilities.csproj" />
     <ProjectReference Include="..\Henry-Inc.ViewModels\Henry-Inc.ViewModels.csproj" />
