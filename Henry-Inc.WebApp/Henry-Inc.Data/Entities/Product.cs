@@ -19,7 +19,5 @@ namespace Henry_Inc.Data.Entities
         public List<ProductInCategory> ProductInCategories { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
         public List<ProductImage> ProductImages { get; set; }
-
-
     }
 }

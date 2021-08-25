@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Henry_Inc.Data.Migrations
 {
-    public partial class newDatabase : Migration
+    public partial class backupdatabase : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -189,6 +189,7 @@ namespace Henry_Inc.Data.Migrations
                     Stock = table.Column<int>(nullable: false, defaultValue: 0),
                     ViewCount = table.Column<int>(nullable: false, defaultValue: 0),
                     DateCreated = table.Column<DateTime>(nullable: false),
+                    IsFeatured = table.Column<bool>(nullable: true),
                     SeoAlias = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
@@ -467,7 +468,7 @@ namespace Henry_Inc.Data.Migrations
             migrationBuilder.InsertData(
                 table: "AppRoles",
                 columns: new[] { "Id", "ConcurrencyStamp", "Description", "Name", "NormalizedName" },
-                values: new object[] { new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"), "18709fd4-b895-46b4-89f5-947b97de2375", "Administrator role", "admin", "admin" });
+                values: new object[] { new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"), "62f9897f-82a4-4aa9-a52e-25456d48640f", "Administrator role", "admin", "admin" });
 
             migrationBuilder.InsertData(
                 table: "AppUserRoles",
@@ -477,7 +478,7 @@ namespace Henry_Inc.Data.Migrations
             migrationBuilder.InsertData(
                 table: "AppUsers",
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Dob", "Email", "EmailConfirmed", "FirstName", "LastName", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TwoFactorEnabled", "UserName" },
-                values: new object[] { new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"), 0, "1011ad29-b813-42a1-ac79-dae3b4d2558b", new DateTime(2000, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), "henry@gmail.com", true, "Henry", "de Aaron", false, null, "henry@gmail.com", "admin", "AQAAAAEAACcQAAAAELnKNISMmHRitliCByye4x/xxFE3nAIRg1ZcClzJCTj3VbGJYxHHtkdr33FVafec1Q==", null, false, "", false, "admin" });
+                values: new object[] { new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"), 0, "6a56c4da-aed6-447d-afed-8a3b55ff7180", new DateTime(2000, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified), "henry@gmail.com", true, "Henry", "de Aaron", false, null, "henry@gmail.com", "admin", "AQAAAAEAACcQAAAAEMFrSn/3YsDsMlGM1Hx3uRhjx0ymE1iiqps5Jx9zumzeA34XoQwy7XuBDHVt2/AXGw==", null, false, "", false, "admin" });
 
             migrationBuilder.InsertData(
                 table: "Categories",
@@ -499,8 +500,21 @@ namespace Henry_Inc.Data.Migrations
 
             migrationBuilder.InsertData(
                 table: "Products",
-                columns: new[] { "Id", "DateCreated", "OriginalPrice", "Price", "SeoAlias" },
-                values: new object[] { 1, new DateTime(2021, 8, 11, 16, 59, 30, 644, DateTimeKind.Local).AddTicks(8640), 100000m, 200000m, null });
+                columns: new[] { "Id", "DateCreated", "IsFeatured", "OriginalPrice", "Price", "SeoAlias" },
+                values: new object[] { 1, new DateTime(2021, 8, 25, 9, 21, 34, 238, DateTimeKind.Local).AddTicks(6203), null, 100000m, 200000m, null });
+
+            migrationBuilder.InsertData(
+                table: "Slides",
+                columns: new[] { "Id", "Description", "Image", "Name", "SortOrder", "Status", "Url" },
+                values: new object[,]
+                {
+                    { 6, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/6.png", "Second Thumbnail label", 6, 1, "#" },
+                    { 1, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/1.png", "Second Thumbnail label", 1, 1, "#" },
+                    { 2, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/2.png", "Second Thumbnail label", 2, 1, "#" },
+                    { 3, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/3.png", "Second Thumbnail label", 3, 1, "#" },
+                    { 4, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/4.png", "Second Thumbnail label", 4, 1, "#" },
+                    { 5, "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.", "/themes/images/carousel/5.png", "Second Thumbnail label", 5, 1, "#" }
+                });
 
             migrationBuilder.InsertData(
                 table: "CategoryTranslations",

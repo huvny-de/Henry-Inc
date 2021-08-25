@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Henry_Inc.Data.Migrations
 {
     [DbContext(typeof(MyAppContext))]
-    [Migration("20210811095931_newDatabase")]
-    partial class newDatabase
+    [Migration("20210825022135_backup-database")]
+    partial class backupdatabase
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -80,7 +80,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = new Guid("8d04dce2-969a-435d-bba4-df3f325983dc"),
-                            ConcurrencyStamp = "18709fd4-b895-46b4-89f5-947b97de2375",
+                            ConcurrencyStamp = "62f9897f-82a4-4aa9-a52e-25456d48640f",
                             Description = "Administrator role",
                             Name = "admin",
                             NormalizedName = "admin"
@@ -157,7 +157,7 @@ namespace Henry_Inc.Data.Migrations
                         {
                             Id = new Guid("69bd714f-9576-45ba-b5b7-f00649be00de"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "1011ad29-b813-42a1-ac79-dae3b4d2558b",
+                            ConcurrencyStamp = "6a56c4da-aed6-447d-afed-8a3b55ff7180",
                             Dob = new DateTime(2000, 3, 27, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "henry@gmail.com",
                             EmailConfirmed = true,
@@ -166,7 +166,7 @@ namespace Henry_Inc.Data.Migrations
                             LockoutEnabled = false,
                             NormalizedEmail = "henry@gmail.com",
                             NormalizedUserName = "admin",
-                            PasswordHash = "AQAAAAEAACcQAAAAELnKNISMmHRitliCByye4x/xxFE3nAIRg1ZcClzJCTj3VbGJYxHHtkdr33FVafec1Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMFrSn/3YsDsMlGM1Hx3uRhjx0ymE1iiqps5Jx9zumzeA34XoQwy7XuBDHVt2/AXGw==",
                             PhoneNumberConfirmed = false,
                             SecurityStamp = "",
                             TwoFactorEnabled = false,
@@ -488,6 +488,9 @@ namespace Henry_Inc.Data.Migrations
                     b.Property<DateTime>("DateCreated")
                         .HasColumnType("datetime2");
 
+                    b.Property<bool?>("IsFeatured")
+                        .HasColumnType("bit");
+
                     b.Property<decimal>("OriginalPrice")
                         .HasColumnType("decimal(18,2)");
 
@@ -515,7 +518,7 @@ namespace Henry_Inc.Data.Migrations
                         new
                         {
                             Id = 1,
-                            DateCreated = new DateTime(2021, 8, 11, 16, 59, 30, 644, DateTimeKind.Local).AddTicks(8640),
+                            DateCreated = new DateTime(2021, 8, 25, 9, 21, 34, 238, DateTimeKind.Local).AddTicks(6203),
                             OriginalPrice = 100000m,
                             Price = 200000m,
                             Stock = 0,
@@ -741,6 +744,68 @@ namespace Henry_Inc.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Slides");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+                            Image = "/themes/images/carousel/1.png",
+                            Name = "Second Thumbnail label",
+                            SortOrder = 1,
+                            Status = 1,
+                            Url = "#"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+                            Image = "/themes/images/carousel/2.png",
+                            Name = "Second Thumbnail label",
+                            SortOrder = 2,
+                            Status = 1,
+                            Url = "#"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+                            Image = "/themes/images/carousel/3.png",
+                            Name = "Second Thumbnail label",
+                            SortOrder = 3,
+                            Status = 1,
+                            Url = "#"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+                            Image = "/themes/images/carousel/4.png",
+                            Name = "Second Thumbnail label",
+                            SortOrder = 4,
+                            Status = 1,
+                            Url = "#"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+                            Image = "/themes/images/carousel/5.png",
+                            Name = "Second Thumbnail label",
+                            SortOrder = 5,
+                            Status = 1,
+                            Url = "#"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",
+                            Image = "/themes/images/carousel/6.png",
+                            Name = "Second Thumbnail label",
+                            SortOrder = 6,
+                            Status = 1,
+                            Url = "#"
+                        });
                 });
 
             modelBuilder.Entity("Henry_Inc.Data.Entities.Transaction", b =>

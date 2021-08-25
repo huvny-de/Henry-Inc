@@ -38,7 +38,8 @@ namespace Henry_Inc.WebApp.Controllers
             var viewModel = new HomeViewModel
             {
                 Slides = await _slideApiClient.GetAll(),
-                FeaturedProducts = await _productApiClient.GetFeaturedProducts(culture, SystemConstant.ProductSettings.NumberOfFeaturedProducts)
+                FeaturedProducts = await _productApiClient.GetFeaturedProducts(culture, SystemConstant.ProductSettings.NumberOfFeaturedProducts),
+                LastedProducts = await _productApiClient.GetLatestProducts(culture, SystemConstant.ProductSettings.NumberOfLatestProducts)
             };
             return View(viewModel);
         }
