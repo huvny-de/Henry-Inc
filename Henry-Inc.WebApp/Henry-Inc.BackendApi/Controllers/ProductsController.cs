@@ -61,7 +61,7 @@ namespace Henry_Inc.BackendApi.Controllers
         [AllowAnonymous]
         public async Task<IActionResult> GetLatestProducts(int take, string languageId)
         {
-            var products = await _productService.GetFeaturedProducts(languageId, take);
+            var products = await _productService.GetLatestProducts(languageId, take);
             return Ok(products);
         }
         [HttpPost]
