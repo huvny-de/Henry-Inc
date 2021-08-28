@@ -4,6 +4,15 @@
 @{
     ViewData["Title"] = "Home Page";
     var culture = CultureInfo.CurrentCulture.Name;
+    var productUrl = "";
+    if (culture == "vi")
+    {
+        productUrl = "san-pham";
+    }
+    else
+    {
+        productUrl = "products";
+    }
 }
 @section slider{
     <div id="carouselBlk">
@@ -46,13 +55,18 @@
                         featuredPart = new List<ProductViewModel>();
                     }
                 }
+
                 @for (int index = 0; index < featuredProducts.Count; index++)
                 {
                     <div class="item @(index == 0?"active":"")">
                         <ul class="thumbnails">
                             @foreach (var item in featuredProducts[index])
                             {
-                                var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
+
+
+                                var url = $"/{culture}/{@productUrl}/{item.Id}";
+
+                                @*var url = $"/{culture}/{_loc["productUrl]}/{item.Id}";*@
                                 <li class="span3">
                                     <div class="thumbnail">
                                         <i class="tag"></i>
@@ -77,7 +91,8 @@
 <ul class="thumbnails">
     @foreach (var item in Model.LastedProducts)
     {
-        var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
+        var url = $"/{culture}/{@productUrl}/{item.Id}";
+        //var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
         <li class="span3">
             <div class="thumbnail">
                 <a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" /></a>

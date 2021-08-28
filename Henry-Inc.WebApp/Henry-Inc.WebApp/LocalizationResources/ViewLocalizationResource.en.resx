@@ -121,6 +121,10 @@
     <value>Add to</value>
     <comment>/Home/Index</comment>
   </data>
+  <data name="categoryUrl" xml:space="preserve">
+    <value>categories</value>
+    <comment>Layouts</comment>
+  </data>
   <data name="Contact" xml:space="preserve">
     <value>Contact</value>
     <comment>Layouts</comment>
@@ -139,6 +143,10 @@
   </data>
   <data name="Login" xml:space="preserve">
     <value>Login</value>
+    <comment>Layouts</comment>
+  </data>
+  <data name="productUrl" xml:space="preserve">
+    <value>products</value>
     <comment>Layouts</comment>
   </data>
   <data name="Specials Offer" xml:space="preserve">
