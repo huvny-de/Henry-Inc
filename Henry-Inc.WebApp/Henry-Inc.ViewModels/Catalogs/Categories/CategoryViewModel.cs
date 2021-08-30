@@ -8,5 +8,6 @@ namespace Henry_Inc.ViewModels.Catalogs.Categories
     {
         public int Id { get; set; }
         public string Name { get; set; }
+        public int? ParentId { get; set; }
     }
 }
