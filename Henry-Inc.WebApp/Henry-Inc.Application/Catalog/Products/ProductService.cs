@@ -2,6 +2,7 @@
 using Henry_Inc.Application.Commons;
 using Henry_Inc.Data.Contexts;
 using Henry_Inc.Data.Entities;
+using Henry_Inc.Utilities.Constants;
 using Henry_Inc.Utilities.Exceptions;
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
@@ -40,16 +41,13 @@ namespace Henry_Inc.Application.Catalog.Products
 
         public async Task<int> Create(ProductCreateRequest request)
         {
-            var product = new Product()
+            var languages = _context.Languages;
+            var translations = new List<ProductTranslation>();
+            foreach (var language in languages)
             {
-                Price = request.Price,
-                OriginalPrice = request.OriginalPrice,
-                Stock = request.Stock,
-                ViewCount = 0,
-                DateCreated = DateTime.Now,
-                ProductTranslations = new List<ProductTranslation>()
+                if (language.Id == request.LanguageId)
                 {
-                    new ProductTranslation()
+                    translations.Add(new ProductTranslation()
                     {
                         Name = request.Name,
                         Description = request.Description,
@@ -58,8 +56,27 @@ namespace Henry_Inc.Application.Catalog.Products
                         SeoAlias = request.SeoAlias,
                         SeoTitle = request.SeoTitle,
                         LanguageId = request.LanguageId
-                    }
+                    });
                 }
+                else
+                {
+                    translations.Add(new ProductTranslation()
+                    {
+                        Name = SystemConstant.ProductConstants.NA,
+                        Description = SystemConstant.ProductConstants.NA,
+                        SeoAlias = SystemConstant.ProductConstants.NA,
+                        LanguageId = language.Id
+                    });
+                }
+            }
+            var product = new Product()
+            {
+                Price = request.Price,
+                OriginalPrice = request.OriginalPrice,
+                Stock = request.Stock,
+                ViewCount = 0,
+                DateCreated = DateTime.Now,
+                ProductTranslations = translations
             };
             // Save Image
             if (request.ThumbnailImage != null)
@@ -104,7 +121,8 @@ namespace Henry_Inc.Application.Catalog.Products
         {
             //1. Select Join
             var query = from p in _context.Products
-                        join pt in _context.ProductTranslations on p.Id equals pt.ProductId
+                        join pt in _context.ProductTranslations on p.Id equals pt.ProductId into ppt
+                        from pt in ppt.DefaultIfEmpty()
                         join pic in _context.ProductInCategories on p.Id equals pic.ProductId into ppic
                         from pic in ppic.DefaultIfEmpty()
                         join c in _context.Categories on pic.CategoryId equals c.Id into picc
