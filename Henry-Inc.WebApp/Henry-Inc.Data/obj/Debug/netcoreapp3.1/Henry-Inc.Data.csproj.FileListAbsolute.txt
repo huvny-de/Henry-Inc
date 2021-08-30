@@ -9,3 +9,4 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\bin\Debug\netcoreapp
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.genruntimeconfig.cache
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Data\obj\Debug\netcoreapp3.1\Henry-Inc.Data.csproj.AssemblyReference.cache
