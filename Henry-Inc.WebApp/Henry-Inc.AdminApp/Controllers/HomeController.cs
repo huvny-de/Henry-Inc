@@ -42,7 +42,7 @@ namespace Henry_Inc.AdminApp.Controllers
         {
             HttpContext.Session.SetString(SystemConstant.AppSettings.DefaultLanguageId,
                 viewModel.CurrentLanguageId);
-            return RedirectToAction("Index");
+            return Redirect(viewModel.ReturnUrl);
         }
     }
 }
