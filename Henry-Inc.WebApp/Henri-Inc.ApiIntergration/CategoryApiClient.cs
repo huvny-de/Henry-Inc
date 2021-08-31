@@ -24,5 +24,10 @@ namespace Henri_Inc.ApiIntergration
         {
             return await GetListAsync<CategoryViewModel>("/api/categories?languageId=" + languageId);
         }
+
+        public async Task<CategoryViewModel> GetById(int id, string languageId)
+        {
+            return await GetAsync<CategoryViewModel>($"/api/categories/{id}/{languageId}");
+        }
     }
 }

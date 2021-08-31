@@ -182,3 +182,4 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcorea
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\SideBar\Default.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Detail.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Category.cshtml.g.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Pager\Default.cshtml.g.cs
