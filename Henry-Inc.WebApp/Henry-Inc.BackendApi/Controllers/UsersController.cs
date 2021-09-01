@@ -13,6 +13,7 @@ namespace Henry_Inc.BackendApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -36,6 +37,7 @@ namespace Henry_Inc.BackendApi.Controllers
             return Ok(result);
         }
         [HttpPost("register")]
+        [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
             if (!ModelState.IsValid)
