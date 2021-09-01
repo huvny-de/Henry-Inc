@@ -1,23 +1,26 @@
 ﻿@model Henry_Inc.ViewModels.System.Users.RegisterRequest
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create new user";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<div class="container-fluid px-4">
-    <h1 class="mt-4">Create New User</h1>
+
+<div class="container-fluid">
+    <h1 class="mt-4">Create new user</h1>
     <ol class="breadcrumb mb-4">
         <li class="breadcrumb-item"><a href="/">Home</a></li>
-        <li class="breadcrumb-item active">Users</li>
+        <li class="breadcrumb-item active">User</li>
         <li class="breadcrumb-item active">Create</li>
+
     </ol>
     <div class="card mb-4">
         <div class="card-header">
-            <a class="btn btn-success" asp-action="Index" asp-controller="Users">Back to list</a>
+            <a class="btn btn-success" asp-action="Index" asp-controller="User">Back to list</a>
         </div>
+
         <div class="card-body">
             <div class="col-md-4">
-                <form asp-action="Create" >
+                <form asp-action="Create">
                     <div asp-validation-summary="All" class="text-danger"></div>
                     <div class="form-group">
                         <label asp-for="FirstName" class="control-label"></label>
@@ -51,20 +54,19 @@
                     </div>
                     <div class="form-group">
                         <label asp-for="Password" class="control-label"></label>
-                        <input   asp-for="Password" class="form-control" />
+                        <input asp-for="Password" class="form-control" />
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                     <div class="form-group">
                         <label asp-for="ConfirmPassword" class="control-label"></label>
-                        <input   asp-for="ConfirmPassword" class="form-control" />
+                        <input asp-for="ConfirmPassword" class="form-control" />
                         <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
                     </div>
                     <div class="form-group">
-                        <input type="submit" value="Create" class="btn btn-primary" />
+                        <input type="submit" value="Save" class="btn btn-primary" />
                     </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
-

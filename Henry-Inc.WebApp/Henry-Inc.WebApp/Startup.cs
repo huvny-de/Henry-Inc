@@ -1,4 +1,6 @@
+using FluentValidation.AspNetCore;
 using Henri_Inc.ApiIntergration;
+using Henry_Inc.ViewModels.System.Users;
 using Henry_Inc.WebApp.LocalizationResources;
 using LazZiya.ExpressLocalization;
 using Microsoft.AspNetCore.Authentication.Cookies;
@@ -37,6 +39,7 @@ namespace Henry_Inc.WebApp
             };
 
             services.AddControllersWithViews()
+                 .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>())
                 .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(ops =>
             {
                 // When using all the culture providers, the localization process will
