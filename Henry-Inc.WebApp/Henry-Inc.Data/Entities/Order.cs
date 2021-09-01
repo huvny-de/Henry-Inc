@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Henry_Inc.Data.Entities
 {
-   public class Order
+    public class Order
     {
         public int Id { set; get; }
         public DateTime OrderDate { set; get; }
@@ -15,11 +15,7 @@ namespace Henry_Inc.Data.Entities
         public string ShipEmail { set; get; }
         public string ShipPhoneNumber { set; get; }
         public OrderStatus Status { set; get; }
-
         public List<OrderDetail> OrderDetails { get; set; }
-
         public AppUser AppUser { get; set; }
-
-
     }
 }
