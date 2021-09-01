@@ -185,3 +185,4 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcorea
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Pager\Default.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
+C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
