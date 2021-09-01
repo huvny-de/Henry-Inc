@@ -1,5 +1,6 @@
 ﻿using Henri_Inc.ApiIntergration;
 using Henry_Inc.Utilities.Constants;
+using Henry_Inc.ViewModels.Sales;
 using Henry_Inc.WebApp.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -85,6 +86,49 @@ namespace Henry_Inc.WebApp.Controllers
 
             HttpContext.Session.SetString(SystemConstant.CartSession, JsonConvert.SerializeObject(currentCart));
             return Ok(currentCart);
+        }
+        public IActionResult Checkout()
+        {
+            return View(GetCheckoutViewModel());
+        }
+
+        [HttpPost]
+        public IActionResult Checkout(CheckoutViewModel request)
+        {
+            var model = GetCheckoutViewModel();
+            var orderDetails = new List<OrderDetailViewModel>();
+            foreach (var item in model.CartItems)
+            {
+                orderDetails.Add(new OrderDetailViewModel()
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity
+                });
+            }
+            var checkoutRequest = new CheckoutRequest()
+            {
+                Address = request.CheckoutModel.Address,
+                Name = request.CheckoutModel.Name,
+                Email = request.CheckoutModel.Email,
+                PhoneNumber = request.CheckoutModel.PhoneNumber,
+                OrderDetails = orderDetails
+            };
+            //TODO: Add to API
+            TempData["SuccessMsg"] = "Order puschased successful";
+            return View(model);
+        }
+        private CheckoutViewModel GetCheckoutViewModel()
+        {
+            var session = HttpContext.Session.GetString(SystemConstant.CartSession);
+            List<CartItemViewModel> currentCart = new List<CartItemViewModel>();
+            if (session != null)
+                currentCart = JsonConvert.DeserializeObject<List<CartItemViewModel>>(session);
+            var checkoutVm = new CheckoutViewModel()
+            {
+                CartItems = currentCart,
+                CheckoutModel = new CheckoutRequest()
+            };
+            return checkoutVm;
         }
     }
 }
