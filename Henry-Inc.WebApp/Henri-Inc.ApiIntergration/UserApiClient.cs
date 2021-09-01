@@ -95,21 +95,20 @@ namespace Henri_Inc.ApiIntergration
             return users;
         }
 
-        public async Task<ApiResult<bool>> RegisterUser(RegisterRequest request)
+        public async Task<ApiResult<bool>> RegisterUser(RegisterRequest registerRequest)
         {
 
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
+            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
 
-            var json = JsonConvert.SerializeObject(request);
+            var json = JsonConvert.SerializeObject(registerRequest);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
 
-            var response = await client.PostAsync($"/api/users/Register", httpContent);
+            var response = await client.PostAsync($"/api/users/register", httpContent);
             var result = await response.Content.ReadAsStringAsync();
             if (response.IsSuccessStatusCode)
-            {
                 return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(result);
-            }
+
             return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(result);
 
         }
