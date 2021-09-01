@@ -1,5 +1,7 @@
 using FluentValidation.AspNetCore;
 using Henri_Inc.ApiIntergration;
+using Henry_Inc.Data.Contexts;
+using Henry_Inc.Data.Entities;
 using Henry_Inc.ViewModels.System.Users;
 using Henry_Inc.WebApp.LocalizationResources;
 using LazZiya.ExpressLocalization;
@@ -8,6 +10,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -37,7 +40,6 @@ namespace Henry_Inc.WebApp
                  new CultureInfo("en"),
                  new CultureInfo("vi")
             };
-
             services.AddControllersWithViews()
                  .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<LoginRequestValidator>())
                 .AddExpressLocalization<ExpressLocalizationResource, ViewLocalizationResource>(ops =>
@@ -84,8 +86,10 @@ namespace Henry_Inc.WebApp
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddTransient<ISlideApiClient, SlideApiClient>();
             services.AddTransient<IProductApiClient, ProductApiClient>();
+            services.AddTransient<IOrderApiClient, OrderApiClient>();
             services.AddTransient<ICategoryApiClient, CategoryApiClient>();
             services.AddTransient<IUserApiClient, UserApiClient>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

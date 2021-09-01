@@ -2,12 +2,16 @@
 using Henry_Inc.Application.Commons;
 using Henry_Inc.Data.Contexts;
 using Henry_Inc.Data.Entities;
+using Henry_Inc.Data.Enums;
 using Henry_Inc.Utilities.Constants;
 using Henry_Inc.Utilities.Exceptions;
+using Henry_Inc.ViewModels.Catalogs.Orders;
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
 using Henry_Inc.ViewModels.Commons;
+using Henry_Inc.ViewModels.Sales;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -23,11 +27,14 @@ namespace Henry_Inc.Application.Catalog.Products
     {
         private readonly MyAppContext _context;
         private readonly IStorageService _storageService;
+        private readonly UserManager<AppUser> _userManager;
         private const string USER_CONTENT_FOLDER_NAME = "user-content";
-        public ProductService(MyAppContext context, IStorageService storageService)
+        public ProductService(MyAppContext context, IStorageService storageService,
+          UserManager<AppUser> userManager)
         {
             _context = context;
             _storageService = storageService;
+            _userManager = userManager;
         }
 
         public async Task AddViewCount(int productId)
@@ -97,6 +104,26 @@ namespace Henry_Inc.Application.Catalog.Products
             _context.Products.Add(product);
             await _context.SaveChangesAsync();
             return product.Id;
+        }
+        public async Task<int> CreateOrder(string userName, CheckoutRequest request)
+        {
+
+            var user = await _userManager.FindByNameAsync(userName);
+            var order = new Order()
+            {
+                ShipName = request.Name,
+                ShipAddress = request.Address,
+                ShipPhoneNumber = request.PhoneNumber,
+                Status = OrderStatus.InProgress,
+                OrderDate = DateTime.Now,
+                OrderDetails = null,
+                ShipEmail = request.Email,
+                UserId = user.Id,
+                AppUser = user
+            };
+            _context.Orders.Add(order);
+            await _context.SaveChangesAsync();
+            return order.Id;
         }
 
         public async Task<int> Delete(int productId)
@@ -443,7 +470,7 @@ namespace Henry_Inc.Application.Catalog.Products
             //1. Select join
             var query = from p in _context.Products
                         join pt in _context.ProductTranslations on p.Id equals pt.ProductId
-                        join pic in _context.ProductInCategories on p.Id equals pic.ProductId into ppic 
+                        join pic in _context.ProductInCategories on p.Id equals pic.ProductId into ppic
                         from pic in ppic.DefaultIfEmpty()
                         join pi in _context.ProductImages on p.Id equals pi.ProductId into ppi
                         from pi in ppi.DefaultIfEmpty()

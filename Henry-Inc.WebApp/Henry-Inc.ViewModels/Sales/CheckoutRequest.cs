@@ -14,6 +14,6 @@ namespace Henry_Inc.ViewModels.Sales
 
         public string PhoneNumber { get; set; }
 
-        public List<OrderDetailViewModel> OrderDetails { set; get; } = new List<OrderDetailViewModel>();
+        //public List<OrderDetailViewModel> OrderDetails { set; get; } = new List<OrderDetailViewModel>();
     }
 }
