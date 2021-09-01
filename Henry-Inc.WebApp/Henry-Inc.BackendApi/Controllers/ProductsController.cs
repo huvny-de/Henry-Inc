@@ -67,8 +67,6 @@ namespace Henry_Inc.BackendApi.Controllers
         [HttpPost]
         [Consumes("multipart/form-data")]
         [Authorize]
-
-
         public async Task<IActionResult> Create([FromForm] ProductCreateRequest request)
         {
             if (!ModelState.IsValid)

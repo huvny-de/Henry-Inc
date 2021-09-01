@@ -1,8 +1,10 @@
 ﻿using Henri_Inc.ApiIntergration;
+using Henry_Inc.Data.Entities;
 using Henry_Inc.Utilities.Constants;
 using Henry_Inc.ViewModels.Sales;
 using Henry_Inc.WebApp.Models;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System;
@@ -15,10 +17,15 @@ namespace Henry_Inc.WebApp.Controllers
     public class CartController : Controller
     {
         private readonly IProductApiClient _productApiClient;
+        private readonly IOrderApiClient _orderApiClient;
+        private readonly IUserApiClient _userApiClient;
 
-        public CartController(IProductApiClient productApiClient)
+
+        public CartController(IProductApiClient productApiClient, IOrderApiClient orderApiClient, IUserApiClient userApiClient)
         {
             _productApiClient = productApiClient;
+            _orderApiClient = orderApiClient;
+            _userApiClient = userApiClient;
         }
 
         public IActionResult Index()
@@ -93,8 +100,10 @@ namespace Henry_Inc.WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Checkout(CheckoutViewModel request)
+        [Consumes("multipart/form-data")]
+        public async Task<IActionResult> Checkout(string userName, CheckoutViewModel request)
         {
+
             var model = GetCheckoutViewModel();
             var orderDetails = new List<OrderDetailViewModel>();
             foreach (var item in model.CartItems)
@@ -110,10 +119,11 @@ namespace Henry_Inc.WebApp.Controllers
                 Address = request.CheckoutModel.Address,
                 Name = request.CheckoutModel.Name,
                 Email = request.CheckoutModel.Email,
-                PhoneNumber = request.CheckoutModel.PhoneNumber,
-                OrderDetails = orderDetails
+                PhoneNumber = request.CheckoutModel.PhoneNumber
+                //OrderDetails = orderDetails
             };
-            //TODO: Add to API
+            var result = await _orderApiClient.CreateOrder(userName, checkoutRequest);
+
             TempData["SuccessMsg"] = "Order puschased successful";
             return View(model);
         }
@@ -130,5 +140,6 @@ namespace Henry_Inc.WebApp.Controllers
             };
             return checkoutVm;
         }
+
     }
 }
