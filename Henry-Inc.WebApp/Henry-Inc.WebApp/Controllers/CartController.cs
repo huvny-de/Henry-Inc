@@ -63,5 +63,28 @@ namespace Henry_Inc.WebApp.Controllers
             HttpContext.Session.SetString(SystemConstant.CartSession, JsonConvert.SerializeObject(currentCart));
             return Ok(currentCart);
         }
+        public IActionResult UpdateCart(int id, int quantity)
+        {
+            var session = HttpContext.Session.GetString(SystemConstant.CartSession);
+            List<CartItemViewModel> currentCart = new List<CartItemViewModel>();
+            if (session != null)
+                currentCart = JsonConvert.DeserializeObject<List<CartItemViewModel>>(session);
+
+            foreach (var item in currentCart)
+            {
+                if (item.ProductId == id)
+                {
+                    if (quantity == 0)
+                    {
+                        currentCart.Remove(item);
+                        break;
+                    }
+                    item.Quantity = quantity;
+                }
+            }
+
+            HttpContext.Session.SetString(SystemConstant.CartSession, JsonConvert.SerializeObject(currentCart));
+            return Ok(currentCart);
+        }
     }
 }
