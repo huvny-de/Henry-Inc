@@ -25,10 +25,10 @@ namespace Henry_Inc.BackendApi.Controllers
             return Ok(products);
         }
         [HttpGet("{id}/{languageId}")]
-        public async Task<IActionResult> GetAll(string languageId, int id)
+        public async Task<IActionResult> GetById(string languageId, int id)
         {
-            var products = await _categoryService.GetById(languageId, id);
-            return Ok(products);
+            var category = await _categoryService.GetById(languageId, id);
+            return Ok(category);
         }
     }
 }
