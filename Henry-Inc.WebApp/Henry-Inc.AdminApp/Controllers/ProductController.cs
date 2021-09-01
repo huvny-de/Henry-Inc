@@ -109,14 +109,12 @@ namespace Henry_Inc.AdminApp.Controllers
         {
             if (!ModelState.IsValid)
                 return View(request);
-
             var result = await _productApiClient.UpdateProduct(request);
             if (result)
             {
                 TempData["result"] = "Product update successful";
                 return RedirectToAction("Index");
             }
-
             ModelState.AddModelError("", "Product update failed");
             return View(request);
         }

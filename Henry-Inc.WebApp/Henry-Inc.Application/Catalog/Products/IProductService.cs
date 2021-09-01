@@ -1,9 +1,12 @@
 ﻿
 using Henry_Inc.Application.Commons;
+using Henry_Inc.ViewModels.Catalogs.Orders;
 using Henry_Inc.ViewModels.Catalogs.ProductImages;
 using Henry_Inc.ViewModels.Catalogs.Products;
 using Henry_Inc.ViewModels.Commons;
+using Henry_Inc.ViewModels.Sales;
 using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
@@ -28,5 +31,6 @@ namespace Henry_Inc.Application.Catalog.Products
         Task<ApiResult<bool>> CategoryAssign(int id, CategoryAssignRequest request);
         Task<List<ProductViewModel>> GetFeaturedProducts(string languageId, int take);
         Task<List<ProductViewModel>> GetLatestProducts(string languageId, int take);
+        public Task<int> CreateOrder(string userName, CheckoutRequest request);
     }
 }
