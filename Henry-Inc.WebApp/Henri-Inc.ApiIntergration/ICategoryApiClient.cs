@@ -11,6 +11,5 @@ namespace Henri_Inc.ApiIntergration
     {
         Task<List<CategoryViewModel>> GetAll(string languageId);
         Task<CategoryViewModel> GetById(int id, string languageId);
-
     }
 }

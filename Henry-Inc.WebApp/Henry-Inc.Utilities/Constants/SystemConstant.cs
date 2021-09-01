@@ -23,7 +23,6 @@ namespace Henry_Inc.Utilities.Constants
         public class ProductConstants
         {
             public const string NA = "N/A";
-
         }
 
     }
