@@ -15,7 +15,7 @@ namespace Henri_Inc.ApiIntergration
         Task<ApiResult<PagedResult<UserViewModel>>> GetUsersPagings(GetUserPagingRequest request);
 
         Task<ApiResult<bool>> RegisterUser(RegisterRequest request);
-
+        Task<bool> RegisterUserForm(RegisterRequest request);
         Task<ApiResult<bool>> UpdateUser(Guid id, UserUpdateRequest request);
 
         Task<ApiResult<UserViewModel>> GetById(Guid id);

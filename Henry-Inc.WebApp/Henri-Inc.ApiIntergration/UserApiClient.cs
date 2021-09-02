@@ -97,22 +97,44 @@ namespace Henri_Inc.ApiIntergration
 
         public async Task<ApiResult<bool>> RegisterUser(RegisterRequest registerRequest)
         {
-
             var client = _httpClientFactory.CreateClient();
-            client.BaseAddress = new Uri(_configuration["BaseAddress"]);
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
 
             var json = JsonConvert.SerializeObject(registerRequest);
             var httpContent = new StringContent(json, Encoding.UTF8, "application/json");
-
-            var response = await client.PostAsync($"/api/users/register", httpContent);
-            var result = await response.Content.ReadAsStringAsync();
+            var response = await client.PostAsync($"/api/users", httpContent);
             if (response.IsSuccessStatusCode)
-                return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(result);
-
+            {
+                var success = await response.Content.ReadAsStringAsync();
+                return JsonConvert.DeserializeObject<ApiSuccessResult<bool>>(success);
+            }
+            var result = await response.Content.ReadAsStringAsync();
             return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(result);
-
         }
+        public async Task<bool> RegisterUserForm(RegisterRequest request)
+        {
+            var languageId = _httpContextAccessor.HttpContext.Session.GetString(SystemConstant.AppSettings.DefaultLanguageId);
+            var sessions = _httpContextAccessor.HttpContext.Session.GetString(SystemConstant.AppSettings.Token);
+            var client = _httpClientFactory.CreateClient();
 
+            client.BaseAddress = new Uri(SystemConstant.AppSettings.BaseAddress);
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", sessions);
+
+            var requestContent = new MultipartFormDataContent();
+
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.FirstName) ? "" : request.FirstName.ToString()), "firstname");
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.LastName) ? "" : request.LastName.ToString()), "lastname");
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.UserName) ? "" : request.UserName.ToString()), "username");
+            requestContent.Add(new StringContent(request.Dob != null ? "" : request.Dob.ToString()), "dob");
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Email) ? "" : request.Email.ToString()), "email");
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.PhoneNumber) ? "" : request.PhoneNumber.ToString()), "phoneNumber");
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.Password) ? "" : request.Password.ToString()), "password");
+            requestContent.Add(new StringContent(string.IsNullOrEmpty(request.ConfirmPassword) ? "" : request.ConfirmPassword.ToString()), "confirmPassword");
+
+            var response = await client.PostAsync($"/api/users/register", requestContent);
+
+            return response.IsSuccessStatusCode;
+        }
         public async Task<ApiResult<bool>> RoleAssign(Guid id, RoleAssignRequest request)
         {
             var client = _httpClientFactory.CreateClient();
@@ -131,7 +153,6 @@ namespace Henri_Inc.ApiIntergration
 
             return JsonConvert.DeserializeObject<ApiErrorResult<bool>>(result);
         }
-
         public async Task<ApiResult<bool>> UpdateUser(Guid id, UserUpdateRequest request)
         {
             var client = _httpClientFactory.CreateClient();

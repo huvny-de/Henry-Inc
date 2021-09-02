@@ -36,7 +36,9 @@ namespace Henry_Inc.BackendApi.Controllers
             }
             return Ok(result);
         }
-        [HttpPost("register")]
+
+        [HttpPost]
+        //[Consumes("multipart/form-data")]
         [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody] RegisterRequest request)
         {
@@ -45,6 +47,7 @@ namespace Henry_Inc.BackendApi.Controllers
                 return BadRequest(ModelState);
             }
             var result = await _userService.Register(request);
+
             if (!result.IsSucceeded)
             {
                 return BadRequest("Register is unsuccessful");

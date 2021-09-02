@@ -55,6 +55,8 @@ namespace Henry_Inc.AdminApp.Controllers
                 return View();
             }
             var result = await _userApiClient.RegisterUser(request);
+            //var result = await _userApiClient.RegisterUserForm(request);
+
             if (result.IsSucceeded)
             {
                 TempData["result"] = "Create new user successful";
