@@ -52,7 +52,7 @@ namespace Henry_Inc.BackendApi.Controllers
             {
                 return BadRequest("Register is unsuccessful");
             }
-            return Ok();
+            return Ok(result);
         }
         //PUT: http://localhost/api/users/id
         [HttpPut("{id}")]
