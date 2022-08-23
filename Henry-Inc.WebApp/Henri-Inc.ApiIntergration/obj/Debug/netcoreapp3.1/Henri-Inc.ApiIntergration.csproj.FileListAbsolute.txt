@@ -16,3 +16,22 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.csproj.CopyComplete
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.deps.json
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.Application.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.Data.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.Application.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.csproj.AssemblyReference.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.AssemblyInfoInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.AssemblyInfo.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.csproj.CoreCompileInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.csproj.CopyComplete
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henri-Inc.ApiIntergration\obj\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.pdb

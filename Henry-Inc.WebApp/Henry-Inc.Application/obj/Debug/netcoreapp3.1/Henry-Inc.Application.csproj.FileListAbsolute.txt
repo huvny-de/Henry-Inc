@@ -14,3 +14,20 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\net
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Application.deps.json
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Application.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Application.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Data.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.csproj.AssemblyReference.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.AssemblyInfoInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.AssemblyInfo.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.csproj.CoreCompileInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.csproj.CopyComplete
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.Application\obj\Debug\netcoreapp3.1\Henry-Inc.Application.pdb

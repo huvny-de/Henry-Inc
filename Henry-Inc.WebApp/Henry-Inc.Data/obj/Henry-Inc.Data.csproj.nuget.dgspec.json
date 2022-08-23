@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {}
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {}
   },
   "projects": {
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
+        "projectUniqueName": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
         "projectName": "Henry-Inc.Data",
-        "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\obj\\",
+        "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
+        "packagesPath": "C:\\Users\\neopi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -82,7 +79,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -91,7 +89,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

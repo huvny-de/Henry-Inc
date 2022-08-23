@@ -10,3 +10,16 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netc
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.Data.dll
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.csproj.CopyComplete
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.deps.json
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.Data.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.csproj.AssemblyReference.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.AssemblyInfoInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.AssemblyInfo.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.csproj.CoreCompileInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.csproj.CopyComplete
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.ViewModels\obj\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb

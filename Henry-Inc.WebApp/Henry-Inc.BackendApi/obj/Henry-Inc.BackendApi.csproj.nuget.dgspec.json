@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj": {}
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj": {}
   },
   "projects": {
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj": {
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj",
+        "projectUniqueName": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj",
         "projectName": "Henry-Inc.Application",
-        "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\obj\\",
+        "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj",
+        "packagesPath": "C:\\Users\\neopi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,14 +28,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
               },
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj"
               },
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj"
               }
             }
           }
@@ -72,7 +69,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -84,24 +82,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj": {
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj",
+        "projectUniqueName": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj",
         "projectName": "Henry-Inc.BackendApi",
-        "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\obj\\",
+        "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\Henry-Inc.BackendApi.csproj",
+        "packagesPath": "C:\\Users\\neopi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.BackendApi\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -115,17 +110,17 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Application\\Henry-Inc.Application.csproj"
               },
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
               },
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj"
               },
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj"
               }
             }
           }
@@ -155,10 +150,17 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.28, 3.1.28]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -167,24 +169,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
+        "projectUniqueName": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
         "projectName": "Henry-Inc.Data",
-        "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\obj\\",
+        "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj",
+        "packagesPath": "C:\\Users\\neopi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -249,7 +248,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -258,24 +258,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj",
+        "projectUniqueName": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj",
         "projectName": "Henry-Inc.Utilities",
-        "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\obj\\",
+        "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\Henry-Inc.Utilities.csproj",
+        "packagesPath": "C:\\Users\\neopi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Utilities\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -306,7 +303,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -315,24 +313,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
+    "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj",
+        "projectUniqueName": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj",
         "projectName": "Henry-Inc.ViewModels",
-        "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj",
-        "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
-        "outputPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\obj\\",
+        "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\Henry-Inc.ViewModels.csproj",
+        "packagesPath": "C:\\Users\\neopi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.ViewModels\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\neopi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -346,8 +341,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
-                "projectPath": "C:\\Henry\\Projects\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
+              "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj": {
+                "projectPath": "C:\\Users\\neopi\\Desktop\\E commerce lol Son\\Henry-Inc\\Henry-Inc.WebApp\\Henry-Inc.Data\\Henry-Inc.Data.csproj"
               }
             }
           }
@@ -377,7 +372,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -386,7 +382,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }
