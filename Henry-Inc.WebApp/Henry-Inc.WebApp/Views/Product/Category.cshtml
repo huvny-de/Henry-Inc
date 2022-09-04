@@ -71,37 +71,40 @@
     </div>
 
     <div class="tab-pane  active" id="blockView">
-        <ul class="thumbnails">
-            @for (int i = 0; i < Model.Products.Items.Count; i++)
-            {   
-                var dfImg = "https://via.placeholder.com/625x800";
-                var item = Model.Products.Items[i];
-                var imageUrl = String.IsNullOrEmpty(item.ThumbnailImage) ? dfImg : (Configuration["BaseAddress"] + item.ThumbnailImage);
+        <div class="tab_product">
+            <div class="row rows-products">
+                @for (int i = 0; i < Model.Products.Items.Count; i++)
+                {
+                    var dfImg = "https://via.placeholder.com/625x800";
+                    var item = Model.Products.Items[i];
+                    var imageUrl = String.IsNullOrEmpty(item.ThumbnailImage) ? dfImg : (Configuration["BaseAddress"] + item.ThumbnailImage);
 
-                <li class="span3">
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6">
-                    <div class="thumbnail">
-                        <a href="/@culture.Name/@_loc["products"]/@item.Id">
-                            <img class="card-img-top" src="@imageUrl" alt="@item.Name" height="800" width="625"/>
-                        </a>
-                        <div class="caption">
-                            <h5>@item.Name</h5>
-                            <p>
-                                @item.Description
-                            </p>
-                            <h4 style="text-align:center">
-                                <a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a>
-                                <a class="btn" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
-                                <a class="btn btn-primary" href="#">@item.Price.ToString("C", culture)</a>
-                            </h4>
+                        <div class="product_grid card b-0">
+                            <div class"card-body p-0">
+                                <a href="/@culture.Name/@_loc["products"]/@item.Id">
+                                    <img class="card-img-top" src="@imageUrl" alt="@item.Name">
+                                </a>
+                            </div>
+                            <div class="caption">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">@item.Name</a></h5>
+                                <p>
+                                    @item.Description
+                                </p>
+                                <h4 style="text-align:left">
+                                    <a class="btn" href="product_details.html">
+                                        <i class="icon-zoom-in"></i>
+                                    </a>
+                                    <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
+                                    <a class="btn btn-primary" href="#">@item.Price.ToString("C", culture)</a>
+                                </h4>
+                            </div>
                         </div>
                     </div>
-                    </div>
-
-                </li>
-            }
-        </ul>
-        <hr class="soft" />
+                }
+                <hr class="soft" />
+            </div>
+        </div>
     </div>
 </div>
 @await Component.InvokeAsync("Pager", Model.Products)

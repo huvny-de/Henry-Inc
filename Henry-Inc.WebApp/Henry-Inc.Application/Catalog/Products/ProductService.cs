@@ -152,10 +152,12 @@ namespace Henry_Inc.Application.Catalog.Products
                         from pt in ppt.DefaultIfEmpty()
                         join pic in _context.ProductInCategories on p.Id equals pic.ProductId into ppic
                         from pic in ppic.DefaultIfEmpty()
+                        join pi in _context.ProductImages on p.Id equals pi.ProductId into ppi
+                        from pi in ppi.DefaultIfEmpty()
                         join c in _context.Categories on pic.CategoryId equals c.Id into picc
                         from c in picc.DefaultIfEmpty()
                         where pt.LanguageId == request.LanguageId
-                        select new { p, pt, pic };
+                        select new { p, pi, pt, pic };
 
             //2. Filter
             if (!string.IsNullOrEmpty(request.Keyword))
@@ -185,6 +187,7 @@ namespace Henry_Inc.Application.Catalog.Products
                     SeoTitle = x.pt.SeoTitle,
                     Stock = x.p.Stock,
                     ViewCount = x.p.ViewCount,
+                    ThumbnailImage = x.pi.ImagePath
 
                 }).ToListAsync();
             //4. Select and projection
