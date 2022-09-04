@@ -73,11 +73,17 @@
     <div class="tab-pane  active" id="blockView">
         <ul class="thumbnails">
             @for (int i = 0; i < Model.Products.Items.Count; i++)
-            {
+            {   
+                var dfImg = "https://via.placeholder.com/625x800";
                 var item = Model.Products.Items[i];
+                var imageUrl = String.IsNullOrEmpty(item.ThumbnailImage) ? dfImg : (Configuration["BaseAddress"] + item.ThumbnailImage);
+
                 <li class="span3">
+                    <div class="col-xl-3 col-lg-4 col-md-6 col-6">
                     <div class="thumbnail">
-                        <a href="/@culture.Name/@_loc["products"]/@item.Id"><img src="@(Configuration["BaseAddress"] + item.ThumbnailImage)" alt="@item.Name" /></a>
+                        <a href="/@culture.Name/@_loc["products"]/@item.Id">
+                            <img class="card-img-top" src="@imageUrl" alt="@item.Name" height="800" width="625"/>
+                        </a>
                         <div class="caption">
                             <h5>@item.Name</h5>
                             <p>
@@ -90,6 +96,8 @@
                             </h4>
                         </div>
                     </div>
+                    </div>
+
                 </li>
             }
         </ul>

@@ -37,6 +37,7 @@
             },
             success: function (res) {
                 $('#lbl_number_items_header').text(res.length);
+                $('#dn_counter_theme_bg').text(res.length);
                 loadData();
             },
             error: function (err) {

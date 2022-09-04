@@ -38,14 +38,16 @@
         </div>
     </div>
 }
-<div class="well well-small">
-    <h4 localize-content>Featured Products<small class="pull-right">200+ featured products</small></h4>
-    <div class="row-fluid">
-        <div id="featured" class="carousel slide">
-            <div class="carousel-inner">
+    <div class="well well-small">
+        <h4 localize-content>Featured Products<small class="pull-right">200+ featured products</small></h4>
+        <div class="row-fluid">
+            <div id="featured" class="carousel slide">
+                <div class="carousel-inner">
 
-                @{ List<List<ProductViewModel>> featuredProducts = new List<List<ProductViewModel>>();
-                    List<ProductViewModel> featuredPart = new List<ProductViewModel>(); }
+                    @{
+                    List<List<ProductViewModel>> featuredProducts = new List<List<ProductViewModel>>();
+                    List<ProductViewModel> featuredPart = new List<ProductViewModel>();
+                }
 
                 @for (int index = 0; index < Model.FeaturedProducts.Count; index++)
                 {
@@ -84,34 +86,44 @@
                     </div>
                 }
             </div>
-            <a class="left carousel-control" href="#featured" data-slide="prev">‹</a>
-            <a class="right carousel-control" href="#featured" data-slide="next">›</a>
         </div>
     </div>
 </div>
 <h4>Latest Products </h4>
-<ul class="thumbnails">
-    @foreach (var item in Model.LastedProducts)
+    <div class="tab_product">
+    <div class="row rows-products">
+          @foreach (var item in Model.LastedProducts)
     {
         var url = $"/{culture}/{@productUrl}/{item.Id}";
+        var dfImg = "https://via.placeholder.com/625x800";
         //var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
-        <li class="span3">
-            <div class="thumbnail">
-                @*<a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" /></a>*@
-                <a href="@url"><img src="@(Configuration["BaseAddress"] + item.ThumbnailImage)" alt="@item.Name"></a>
-                <div class="caption">
-                    <h5>@item.Name</h5>
-                    <p>
-                        @item.Description
-                    </p>
-                    <h4 style="text-align:center">
-                        <a class="btn" href="@url">
-                            <i class="icon-zoom-in"></i>
-                        </a> <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
-                        <a class="btn btn-primary" href="#">@item.Price</a>
-                    </h4>
+       <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+            <div class="product_grid card b-0">
+                    @*<a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" /></a>*@
+                    @{
+                        var imageUrl = String.IsNullOrEmpty(item.ThumbnailImage) ? dfImg : (Configuration["BaseAddress"] + item.ThumbnailImage);
+                    }
+                    <div class"card-body p-0">
+                        <a href="@url">
+                            <img class="card-img-top" src="@imageUrl" alt="@item.Name" style="max-width: 350px;object-fit: contain">
+                        </a>
+                    </div>
+                    <div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
+                        <div class="caption">
+                            <h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">@item.Name</a></h5>
+                            <p>
+                                @item.Description
+                            </p>
+                            <h4 style="text-align:left">
+                                <a class="btn" href="@url">
+                                    <i class="icon-zoom-in"></i>
+                                </a> <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
+                                <div class="elis_rty"><span class="ft-bold text-dark fs-sm">@item.Price</span></div>
+                            </h4>
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </li>
+         </div>
     }
-</ul>
+    </div>
+    </div>

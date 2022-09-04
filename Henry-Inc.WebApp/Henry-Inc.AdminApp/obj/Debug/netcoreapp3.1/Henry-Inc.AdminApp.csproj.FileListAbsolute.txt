@@ -445,6 +445,14 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcor
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.pdb
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Edit.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Razor\Views\Product\Delete.cshtml.g.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.csproj.AssemblyReference.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.AssemblyInfoInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.AssemblyInfo.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.csproj.CoreCompileInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.RazorAssemblyInfo.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.RazorAssemblyInfo.cs
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.AdminApp.StaticWebAssets.xml
@@ -649,7 +657,6 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.A
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Resources.Reader.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Resources.ResourceManager.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Resources.Writer.dll
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Runtime.CompilerServices.VisualC.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Runtime.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Runtime.Extensions.dll
@@ -681,7 +688,6 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.A
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Security.SecureString.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.ServiceModel.Web.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.ServiceProcess.dll
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.CodePages.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Text.Encoding.Extensions.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\refs\System.Text.Encodings.Web.dll
@@ -768,18 +774,23 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.A
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Composition.Convention.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Composition.Hosting.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Text.Encoding.CodePages.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
@@ -835,12 +846,16 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.A
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henri-Inc.ApiIntergration.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.Application.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.Data.dll
@@ -851,15 +866,6 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.A
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.Utilities.pdb
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.csproj.AssemblyReference.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.AssemblyInfoInputs.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.AssemblyInfo.cs
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.csproj.CoreCompileInputs.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.RazorAssemblyInfo.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.RazorAssemblyInfo.cs
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\staticwebassets\Henry-Inc.AdminApp.StaticWebAssets.Manifest.cache
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.TagHelpers.input.cache
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.TagHelpers.output.cache

@@ -9,6 +9,8 @@ using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
@@ -46,12 +48,12 @@ namespace Henri_Inc.ApiIntergration
 
             if (request.ThumbnailImage != null)
             {
-                byte[] data;
-                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-                {
-                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-                }
-                ByteArrayContent bytes = new ByteArrayContent(data);
+                var image = Image.FromStream(request.ThumbnailImage.OpenReadStream());
+                var resized = new Bitmap(image, new Size(625, 800));
+                using var imageStream = new MemoryStream();
+                resized.Save(imageStream, ImageFormat.Jpeg);
+                var imageBytes = imageStream.ToArray();
+                ByteArrayContent bytes = new ByteArrayContent(imageBytes);
                 requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
             }
 
@@ -84,12 +86,12 @@ namespace Henri_Inc.ApiIntergration
 
             if (request.ThumbnailImage != null)
             {
-                byte[] data;
-                using (var br = new BinaryReader(request.ThumbnailImage.OpenReadStream()))
-                {
-                    data = br.ReadBytes((int)request.ThumbnailImage.OpenReadStream().Length);
-                }
-                ByteArrayContent bytes = new ByteArrayContent(data);
+                var image = Image.FromStream(request.ThumbnailImage.OpenReadStream());
+                var resized = new Bitmap(image, new Size(625, 800));
+                using var imageStream = new MemoryStream();
+                resized.Save(imageStream, ImageFormat.Jpeg);
+                var imageBytes = imageStream.ToArray();
+                ByteArrayContent bytes = new ByteArrayContent(imageBytes);
                 requestContent.Add(bytes, "thumbnailImage", request.ThumbnailImage.FileName);
             }
 

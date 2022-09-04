@@ -187,6 +187,19 @@ C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcorea
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Account\Register.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Index.cshtml.g.cs
 C:\Henry\Projects\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Razor\Views\Cart\Checkout.cshtml.g.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.AssemblyReference.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ExpressLocalizationResource.en.resources
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ExpressLocalizationResource.vi.resources
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ViewLocalizationResource.en.resources
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ViewLocalizationResource.vi.resources
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.GenerateResource.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.AssemblyInfoInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.AssemblyInfo.cs
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.CoreCompileInputs.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.RazorAssemblyInfo.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.RazorAssemblyInfo.cs
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\appsettings.json
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Henry-Inc.WebApp.StaticWebAssets.xml
@@ -252,6 +265,7 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.W
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\NuGet.Frameworks.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.Composition.AttributedModel.dll
@@ -260,6 +274,7 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.W
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.Composition.Runtime.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.Composition.TypedParts.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
@@ -318,9 +333,12 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.W
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\Microsoft.Win32.SystemEvents.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp3.1\System.Drawing.Common.dll
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp3.1\System.Drawing.Common.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
@@ -334,20 +352,6 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.W
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Henry-Inc.ViewModels.pdb
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Henry-Inc.Application.pdb
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\bin\Debug\netcoreapp3.1\Henry-Inc.Data.pdb
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.AssemblyReference.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ExpressLocalizationResource.en.resources
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ExpressLocalizationResource.vi.resources
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ViewLocalizationResource.en.resources
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry_Inc.WebApp.LocalizationResources.ViewLocalizationResource.vi.resources
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.GenerateResource.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.AssemblyInfoInputs.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.AssemblyInfo.cs
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.csproj.CoreCompileInputs.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.RazorAssemblyInfo.cache
-C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.RazorAssemblyInfo.cs
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\en\Henry-Inc.WebApp.resources.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\vi\Henry-Inc.WebApp.resources.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\staticwebassets\Henry-Inc.WebApp.StaticWebAssets.Manifest.cache
