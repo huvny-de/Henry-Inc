@@ -90,15 +90,15 @@
     </div>
 </div>
 <h4>Latest Products </h4>
-    <div class="tab_product">
+<div class="tab_product">
     <div class="row rows-products">
-          @foreach (var item in Model.LastedProducts)
-    {
-        var url = $"/{culture}/{@productUrl}/{item.Id}";
-        var dfImg = "https://via.placeholder.com/625x800";
-        //var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
-       <div class="col-xl-3 col-lg-4 col-md-6 col-6">
-            <div class="product_grid card b-0">
+        @foreach (var item in Model.LastedProducts)
+        {
+            var url = $"/{culture}/{@productUrl}/{item.Id}";
+            var dfImg = "https://via.placeholder.com/625x800";
+            //var url = $"/{culture}/{_loc["productUrl"]}/{item.Id}";
+            <div class="col-xl-3 col-lg-4 col-md-6 col-6">
+                <div class="product_grid card b-0">
                     @*<a href="@url"><img src="@item.ThumbnailImage" alt="@item.Name" /></a>*@
                     @{
                         var imageUrl = String.IsNullOrEmpty(item.ThumbnailImage) ? dfImg : (Configuration["BaseAddress"] + item.ThumbnailImage);
@@ -108,22 +108,35 @@
                             <img class="card-img-top" src="@imageUrl" alt="@item.Name" style="max-width: 350px;object-fit: contain">
                         </a>
                     </div>
+
                     <div class="card-footer b-0 p-0 pt-2 bg-white d-flex align-items-start justify-content-between">
-                        <div class="caption">
-                            <h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">@item.Name</a></h5>
-                            <p>
-                                @item.Description
-                            </p>
-                            <h4 style="text-align:left">
-                                <a class="btn" href="@url">
-                                    <i class="icon-zoom-in"></i>
-                                </a> <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
-                                <div class="elis_rty"><span class="ft-bold text-dark fs-sm">@item.Price</span></div>
-                            </h4>
+                        <div class="text-left">
+                            <div class="text-left">
+                                <div class="star-rating align-items-center d-flex justify-content-left mb-1 p-0">
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star filled"></i>
+                                    <i class="fas fa-star"></i>
+                                    <span class="small">(5 Reviews)</span>
+                                </div>
+                            </div>
+                            <div class="caption">
+                                <h5 class="fs-md mb-0 lh-1 mb-1"><a href="shop-single-v1.html">@item.Name</a></h5>
+                                <p>
+                                    @item.Description
+                                </p>
+                                <h4 style="text-align:left">
+                                    <a class="btn" href="@url">
+                                        <i class="icon-zoom-in"></i>
+                                    </a> <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
+                                    <div class="elis_rty"><span class="ft-bold text-dark fs-sm">@item.Price</span></div>
+                                </h4>
+                            </div>
                         </div>
                     </div>
                 </div>
-         </div>
-    }
+            </div>
+        }
     </div>
-    </div>
+</div>

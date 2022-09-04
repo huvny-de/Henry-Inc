@@ -222,6 +222,22 @@ namespace Henry_Inc.Application.Catalog.Products
                     thumbnailImage.ImagePath = await this.SaveFile(request.ThumbnailImage);
                     _context.ProductImages.Update(thumbnailImage);
                 }
+                else
+                {
+                    product.ProductImages = new List<ProductImage>()
+                {
+                    new ProductImage()
+                    {
+                        Caption = "Thumbnail image",
+                        DateCreated = DateTime.Now,
+                        FileSize = request.ThumbnailImage.Length,
+                        ImagePath = await this.SaveFile(request.ThumbnailImage),
+                        IsDefault = true,
+                        SortOrder =1,
+                    }
+                };
+                }
+
             }
             return await _context.SaveChangesAsync();
         }
