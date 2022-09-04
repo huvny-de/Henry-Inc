@@ -898,3 +898,4 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.A
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.pdb
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.genruntimeconfig.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.AdminApp\obj\Debug\netcoreapp3.1\Henry-Inc.AdminApp.MvcApplicationPartsAssemblyInfo.cs

@@ -29,7 +29,7 @@ namespace Henry_Inc.WebApp.Controllers
                 Product = product,
                 Category = new ViewModels.Catalogs.Categories.CategoryViewModel()
                 {
-                    Name = product.Categories.First() ?? String.Empty
+                    Name = product.Categories.FirstOrDefault()
                 }
             });
         }

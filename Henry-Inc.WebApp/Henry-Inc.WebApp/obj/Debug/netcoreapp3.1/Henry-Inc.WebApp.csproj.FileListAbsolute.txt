@@ -380,3 +380,4 @@ C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.W
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.dll
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.pdb
 C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.genruntimeconfig.cache
+C:\Users\neopi\Desktop\E commerce lol Son\Henry-Inc\Henry-Inc.WebApp\Henry-Inc.WebApp\obj\Debug\netcoreapp3.1\Henry-Inc.WebApp.MvcApplicationPartsAssemblyInfo.cs
