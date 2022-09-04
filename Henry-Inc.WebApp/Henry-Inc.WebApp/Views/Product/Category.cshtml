@@ -78,12 +78,11 @@
                     var dfImg = "https://via.placeholder.com/625x800";
                     var item = Model.Products.Items[i];
                     var imageUrl = String.IsNullOrEmpty(item.ThumbnailImage) ? dfImg : (Configuration["BaseAddress"] + item.ThumbnailImage);
-
                     <div class="col-xl-3 col-lg-4 col-md-6 col-6">
                         <div class="product_grid card b-0">
                             <div class"card-body p-0">
                                 <a href="/@culture.Name/@_loc["products"]/@item.Id">
-                                    <img class="card-img-top" src="@imageUrl" alt="@item.Name">
+                                    <img href="/@culture.Name/@_loc["products"]/@item.Id" class="card-img-top" src="@imageUrl" alt="@item.Name">
                                 </a>
                             </div>
                             <div class="caption">
@@ -92,10 +91,10 @@
                                     @item.Description
                                 </p>
                                 <h4 style="text-align:left">
-                                    <a class="btn" href="product_details.html">
+                                    <a class="btn" href="/@culture.Name/@_loc["products"]/@item.Id">
                                         <i class="icon-zoom-in"></i>
                                     </a>
-                                    <a class="btn btn-add-cart" data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
+                                    <a class="btn btn-add-cart"  data-id="@item.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
                                     <a class="btn btn-primary" href="#">@item.Price.ToString("C", culture)</a>
                                 </h4>
                             </div>

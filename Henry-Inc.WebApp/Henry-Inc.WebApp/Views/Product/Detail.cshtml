@@ -12,150 +12,308 @@
     @*<li><a href="/@_loc["categoryUrl"]/@Model.Category.Id">@Model.Category.Name</a> <span class="divider">/</span></li>*@
     <li class="active">@Model.Product.Name</li>
 </ul>
-
-<div class="row">
-    <div id="gallery" class="span3">
-        <a href="@(Configuration["BaseAddress"] + Model.Product.ThumbnailImage)" title="@Model.Product.Name">
-            <img src="@(Configuration["BaseAddress"] + Model.Product.ThumbnailImage)" style="width:100%" alt="@Model.Product.Name" />
-        </a>
-        <div id="differentview" class="moreOptopm carousel slide">
-            <div class="carousel-inner">
-                <div class="item active">
-                    <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt="" /></a>
-                    <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt="" /></a>
-                    <a href="themes/images/products/large/f3.jpg"> <img style="width:29%" src="themes/images/products/large/f3.jpg" alt="" /></a>
-                </div>
-                <div class="item">
-                    <a href="themes/images/products/large/f3.jpg"> <img style="width:29%" src="themes/images/products/large/f3.jpg" alt="" /></a>
-                    <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt="" /></a>
-                    <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt="" /></a>
-                </div>
-            </div>
-            <!--
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
-            -->
-        </div>
-
-        <div class="btn-toolbar">
-            <div class="btn-group">
-                <span class="btn"><i class="icon-envelope"></i></span>
-                <span class="btn"><i class="icon-print"></i></span>
-                <span class="btn"><i class="icon-zoom-in"></i></span>
-                <span class="btn"><i class="icon-star"></i></span>
-                <span class="btn"><i class=" icon-thumbs-up"></i></span>
-                <span class="btn"><i class="icon-thumbs-down"></i></span>
-            </div>
-        </div>
-    </div>
-    <div class="span6">
-        <h3>@Model.Product.Name</h3>
-        <small>@Model.Product.Description</small>
-        <hr class="soft" />
-        <form class="form-horizontal qtyFrm">
-            <div class="control-group">
-                <label class="control-label"><span>$222.00</span></label>
-                <div class="controls">
-                    <input type="number" class="span1" placeholder="Qty." />
-                    <button type="submit" class="btn btn-large btn-primary pull-right"> <localize>Add to</localize> <i class=" icon-shopping-cart"></i></button>
-                </div>
-            </div>
-        </form>
-
-        <hr class="soft" />
-        <h4>100 items in stock</h4>
-        <form class="form-horizontal qtyFrm pull-right">
-            <div class="control-group">
-                <label class="control-label"><span>Color</span></label>
-                <div class="controls">
-                    <select class="span2">
-                        <option>Black</option>
-                        <option>Red</option>
-                        <option>Blue</option>
-                        <option>Brown</option>
-                    </select>
-                </div>
-            </div>
-        </form>
-        <hr class="soft clr" />
-        <p>
-            @Html.Raw(Model.Product.Details)
-        </p>
-        <a class="btn btn-small pull-right" href="#detail"><localize>More Details</localize></a>
-        <br class="clr" />
-        <a href="#" name="detail"></a>
-        <hr class="soft" />
-    </div>
-
-    <div class="span9">
-        <ul id="productDetail" class="nav nav-tabs">
-            <li class="active"><a href="#home" data-toggle="tab"><localize>Product Details</localize></a></li>
-            <li><a href="#profile" data-toggle="tab"><localize>Related Products</localize></a></li>
-        </ul>
-        <div id="myTabContent" class="tab-content">
-            <div class="tab-pane fade active in" id="home">
-                <h4>Product Information</h4>
-                @Html.Raw(Model.Product.Details)
-            </div>
-            <div class="tab-pane fade" id="profile">
-                <div id="myTab" class="pull-right">
-                    <a href="#listView" data-toggle="tab"><span class="btn btn-large"><i class="icon-list"></i></span></a>
-                    <a href="#blockView" data-toggle="tab"><span class="btn btn-large btn-primary"><i class="icon-th-large"></i></span></a>
-                </div>
-                <br class="clr" />
-                <hr class="soft" />
-                <div class="tab-content">
-                    <div class="tab-pane" id="listView">
-                        <div class="row">
-                            <div class="span2">
-                                <img src="themes/images/products/4.jpg" alt="" />
+<div class="modal-fullscreen">
+    <div class="quick_view_wrap">
+        <div class="quick_view_thmb">
+            <div class="quick_view_slide">
+                <div id="gallery" class="single_view_slide">
+                    @* <img src="https://via.placeholder.com/625x800" class="img-fluid" alt="" />*@
+                    <a href="@(Configuration["BaseAddress"] + Model.Product.ThumbnailImage)" title="@Model.Product.Name">
+                        <img src="@(Configuration["BaseAddress"] + Model.Product.ThumbnailImage)" style="width:100%" alt="@Model.Product.Name" />
+                    </a>
+                    <div id="differentview" class="moreOptopm carousel slide">
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt="" /></a>
+                                <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt="" /></a>
+                                <a href="themes/images/products/large/f3.jpg"> <img style="width:29%" src="themes/images/products/large/f3.jpg" alt="" /></a>
                             </div>
-                            <div class="span4">
-                                <h3>New | Available</h3>
-                                <hr class="soft" />
-                                <h5>Product Name </h5>
-                                <p>
-                                    Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies -
-                                    that is why our goods are so popular..
-                                </p>
-                                <a class="btn btn-small pull-right" href="product_details.html">View Details</a>
-                                <br class="clr" />
-                            </div>
-                            <div class="span3 alignR">
-                                <form class="form-horizontal qtyFrm">
-                                    <h3> $222.00</h3>
-                                    <label class="checkbox">
-                                        <input type="checkbox">  Adds product to compair
-                                    </label><br />
-                                    <div class="btn-group">
-                                        <a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
-                                        <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
-                                    </div>
-                                </form>
+                            <div class="item">
+                                <a href="themes/images/products/large/f3.jpg"> <img style="width:29%" src="themes/images/products/large/f3.jpg" alt="" /></a>
+                                <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt="" /></a>
+                                <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt="" /></a>
                             </div>
                         </div>
-                        <hr class="soft" />
-                    </div>
-                    <div class="tab-pane active" id="blockView">
-                        <ul class="thumbnails">
-                            <li class="span3">
-                                <div class="thumbnail">
-                                    <a href="product_details.html"><img src="themes/images/products/10.jpg" alt="" /></a>
-                                    <div class="caption">
-                                        <h5>Manicure &amp; Pedicure</h5>
-                                        <p>
-                                            Lorem Ipsum is simply dummy text.
-                                        </p>
-                                        <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                        <hr class="soft" />
+                        <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+                        <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
                     </div>
                 </div>
-                <br class="clr">
+            </div>
+        </div>
+
+        <div class="quick_view_capt">
+            <div class="prd_details">
+
+                <div class="prt_01 mb-1"><span class="text-light bg-info rounded px-2 py-1">@Model.Category.Name</span></div>
+                <div class="prt_02 mb-2">
+                    <h2 class="ft-bold mb-1">@Model.Product.Name</h2>
+                    <div class="text-left">
+                        <div class="star-rating align-items-center d-flex justify-content-left mb-1 p-0">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="small">(412 Reviews)</span>
+                        </div>
+                        <div class="elis_rty">
+                            <span class="ft-bold theme-cl fs-lg mr-2">$ @Model.Product.Price</span>
+                            @{
+                                var remainText = @Model.Product.Stock == 0 ? "out of stock" : (@Model.Product.Stock + "remaining");
+                            }
+                            <span class="ft-regular text-danger bg-light-danger py-1 px-2 fs-sm">@remainText</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prt_03 mb-3">
+                    <p>@Model.Product.Description</p>
+                </div>
+
+                <div class="prt_04 mb-2">
+                    <p class="d-flex align-items-center mb-0 text-dark ft-medium">Color:</p>
+                    <div class="text-left">
+                        <div class="form-check form-option form-check-inline mb-1">
+                            <input class="form-check-input" type="radio" name="color8" id="white8">
+                            <label class="form-option-label rounded-circle" for="white8"><span class="form-option-color rounded-circle blc7"></span></label>
+                        </div>
+                        <div class="form-check form-option form-check-inline mb-1">
+                            <input class="form-check-input" type="radio" name="color8" id="blue8">
+                            <label class="form-option-label rounded-circle" for="blue8"><span class="form-option-color rounded-circle blc2"></span></label>
+                        </div>
+                        <div class="form-check form-option form-check-inline mb-1">
+                            <input class="form-check-input" type="radio" name="color8" id="yellow8">
+                            <label class="form-option-label rounded-circle" for="yellow8"><span class="form-option-color rounded-circle blc5"></span></label>
+                        </div>
+                        <div class="form-check form-option form-check-inline mb-1">
+                            <input class="form-check-input" type="radio" name="color8" id="pink8">
+                            <label class="form-option-label rounded-circle" for="pink8"><span class="form-option-color rounded-circle blc3"></span></label>
+                        </div>
+                        <div class="form-check form-option form-check-inline mb-1">
+                            <input class="form-check-input" type="radio" name="color8" id="red">
+                            <label class="form-option-label rounded-circle" for="red"><span class="form-option-color rounded-circle blc4"></span></label>
+                        </div>
+                        <div class="form-check form-option form-check-inline mb-1">
+                            <input class="form-check-input" type="radio" name="color8" id="green">
+                            <label class="form-option-label rounded-circle" for="green"><span class="form-option-color rounded-circle blc6"></span></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prt_04 mb-4">
+                    <p class="d-flex align-items-center mb-0 text-dark ft-medium">Size:</p>
+                    <div class="text-left pb-0 pt-2">
+                        <div class="form-check size-option form-option form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="28" checked="">
+                            <label class="form-option-label" for="28">28</label>
+                        </div>
+                        <div class="form-check form-option size-option  form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="30">
+                            <label class="form-option-label" for="30">30</label>
+                        </div>
+                        <div class="form-check form-option size-option  form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="32">
+                            <label class="form-option-label" for="32">32</label>
+                        </div>
+                        <div class="form-check form-option size-option  form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="34">
+                            <label class="form-option-label" for="34">34</label>
+                        </div>
+                        <div class="form-check form-option size-option  form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="36">
+                            <label class="form-option-label" for="36">36</label>
+                        </div>
+                        <div class="form-check form-option size-option  form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="38">
+                            <label class="form-option-label" for="38">38</label>
+                        </div>
+                        <div class="form-check form-option size-option  form-check-inline mb-2">
+                            <input class="form-check-input" type="radio" name="size" id="40">
+                            <label class="form-option-label" for="40">40</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prt_05 mb-4">
+                    <div class="form-row mb-7">
+                        <div class="col-12 col-lg-auto">
+                            <!-- Quantity -->
+                            <select class="mb-2 custom-select">
+                                <option value="1" selected="">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-lg">
+                            <!-- Submit -->
+                            <a class="btn btn-add-cart" data-id="@Model.Product.Id" href="#"><localize>Add to</localize> <i class="icon-shopping-cart"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="prt_06">
+                    <p class="mb-0 d-flex align-items-center">
+                        <span class="mr-4">Share:</span>
+                        <a class="d-inline-flex align-items-center justify-content-center p-3 gray circle fs-sm text-muted mr-2" href="#!">
+                            <i class="fab fa-twitter position-absolute"></i>
+                        </a>
+                        <a class="d-inline-flex align-items-center justify-content-center p-3 gray circle fs-sm text-muted mr-2" href="#!">
+                            <i class="fab fa-facebook-f position-absolute"></i>
+                        </a>
+                        <a class="d-inline-flex align-items-center justify-content-center p-3 gray circle fs-sm text-muted" href="#!">
+                            <i class="fab fa-pinterest-p position-absolute"></i>
+                        </a>
+                    </p>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+@*    <div id="gallery" class="span3">
+    <a href="@(Configuration["BaseAddress"] + Model.Product.ThumbnailImage)" title="@Model.Product.Name">
+    <img src="@(Configuration["BaseAddress"] + Model.Product.ThumbnailImage)" style="width:100%" alt="@Model.Product.Name" />
+    </a>
+    <div id="differentview" class="moreOptopm carousel slide">
+    <div class="carousel-inner">
+    <div class="item active">
+    <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt="" /></a>
+    <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt="" /></a>
+    <a href="themes/images/products/large/f3.jpg"> <img style="width:29%" src="themes/images/products/large/f3.jpg" alt="" /></a>
+    </div>
+    <div class="item">
+    <a href="themes/images/products/large/f3.jpg"> <img style="width:29%" src="themes/images/products/large/f3.jpg" alt="" /></a>
+    <a href="themes/images/products/large/f1.jpg"> <img style="width:29%" src="themes/images/products/large/f1.jpg" alt="" /></a>
+    <a href="themes/images/products/large/f2.jpg"> <img style="width:29%" src="themes/images/products/large/f2.jpg" alt="" /></a>
+    </div>
+    </div>
+    <!--
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+    -->
+    </div>
+
+    <div class="btn-toolbar">
+    <div class="btn-group">
+    <span class="btn"><i class="icon-envelope"></i></span>
+    <span class="btn"><i class="icon-print"></i></span>
+    <span class="btn"><i class="icon-zoom-in"></i></span>
+    <span class="btn"><i class="icon-star"></i></span>
+    <span class="btn"><i class=" icon-thumbs-up"></i></span>
+    <span class="btn"><i class="icon-thumbs-down"></i></span>
+    </div>
+    </div>
+    </div>
+    <div class="span6">
+    <h3>@Model.Product.Name</h3>
+    <small>@Model.Product.Description</small>
+    <hr class="soft" />
+    <form class="form-horizontal qtyFrm">
+    <div class="control-group">
+    <label class="control-label"><span>$222.00</span></label>
+    <div class="controls">
+    <input type="number" class="span1" placeholder="Qty." />
+    <button type="submit" class="btn btn-large btn-primary pull-right"> <localize>Add to</localize> <i class=" icon-shopping-cart"></i></button>
+    </div>
+    </div>
+    </form>
+
+    <hr class="soft" />
+    <h4>100 items in stock</h4>
+    <form class="form-horizontal qtyFrm pull-right">
+    <div class="control-group">
+    <label class="control-label"><span>Color</span></label>
+    <div class="controls">
+    <select class="span2">
+    <option>Black</option>
+    <option>Red</option>
+    <option>Blue</option>
+    <option>Brown</option>
+    </select>
+    </div>
+    </div>
+    </form>
+    <hr class="soft clr" />
+    <p>
+    @Html.Raw(Model.Product.Details)
+    </p>
+    <a class="btn btn-small pull-right" href="#detail"><localize>More Details</localize></a>
+    <br class="clr" />
+    <a href="#" name="detail"></a>
+    <hr class="soft" />
+    </div>
+
+    <div class="span9">
+    <ul id="productDetail" class="nav nav-tabs">
+    <li class="active"><a href="#home" data-toggle="tab"><localize>Product Details</localize></a></li>
+    <li><a href="#profile" data-toggle="tab"><localize>Related Products</localize></a></li>
+    </ul>
+    <div id="myTabContent" class="tab-content">
+    <div class="tab-pane fade active in" id="home">
+    <h4>Product Information</h4>
+    @Html.Raw(Model.Product.Details)
+    </div>
+    <div class="tab-pane fade" id="profile">
+    <div id="myTab" class="pull-right">
+    <a href="#listView" data-toggle="tab"><span class="btn btn-large"><i class="icon-list"></i></span></a>
+    <a href="#blockView" data-toggle="tab"><span class="btn btn-large btn-primary"><i class="icon-th-large"></i></span></a>
+    </div>
+    <br class="clr" />
+    <hr class="soft" />
+    <div class="tab-content">
+    <div class="tab-pane" id="listView">
+    <div class="row">
+    <div class="span2">
+    <img src="themes/images/products/4.jpg" alt="" />
+    </div>
+    <div class="span4">
+    <h3>New | Available</h3>
+    <hr class="soft" />
+    <h5>Product Name </h5>
+    <p>
+    Nowadays the lingerie industry is one of the most successful business spheres.We always stay in touch with the latest fashion tendencies -
+    that is why our goods are so popular..
+    </p>
+    <a class="btn btn-small pull-right" href="product_details.html">View Details</a>
+    <br class="clr" />
+    </div>
+    <div class="span3 alignR">
+    <form class="form-horizontal qtyFrm">
+    <h3> $222.00</h3>
+    <label class="checkbox">
+    <input type="checkbox">  Adds product to compair
+    </label><br />
+    <div class="btn-group">
+    <a href="product_details.html" class="btn btn-large btn-primary"> Add to <i class=" icon-shopping-cart"></i></a>
+    <a href="product_details.html" class="btn btn-large"><i class="icon-zoom-in"></i></a>
+    </div>
+    </form>
+    </div>
+    </div>
+    <hr class="soft" />
+    </div>
+    <div class="tab-pane active" id="blockView">
+    <ul class="thumbnails">
+    <li class="span3">
+    <div class="thumbnail">
+    <a href="product_details.html"><img src="themes/images/products/10.jpg" alt="" /></a>
+    <div class="caption">
+    <h5>Manicure &amp; Pedicure</h5>
+    <p>
+    Lorem Ipsum is simply dummy text.
+    </p>
+    <h4 style="text-align:center"><a class="btn" href="product_details.html"> <i class="icon-zoom-in"></i></a> <a class="btn" href="#">Add to <i class="icon-shopping-cart"></i></a> <a class="btn btn-primary" href="#">&euro;222.00</a></h4>
+    </div>
+    </div>
+    </li>
+    </ul>
+    <hr class="soft" />
+    </div>
+    </div>
+    <br class="clr">
+    </div>
+    </div>
+    </div>*@

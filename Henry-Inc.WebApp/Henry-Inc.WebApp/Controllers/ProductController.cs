@@ -26,7 +26,11 @@ namespace Henry_Inc.WebApp.Controllers
             var product = await _productApiClient.GetById(id, culture);
             return View(new ProductDetailViewModel()
             {
-                Product = product
+                Product = product,
+                Category = new ViewModels.Catalogs.Categories.CategoryViewModel()
+                {
+                    Name = product.Categories.First() ?? String.Empty
+                }
             });
         }
         public async Task<IActionResult> Category(int id, string culture, int page = 1)
